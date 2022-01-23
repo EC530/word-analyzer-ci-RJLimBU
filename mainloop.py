@@ -1,10 +1,13 @@
 #main console
 
+def getfilepath():
+	filepath = input('Please enter path of your file: ')
+	return filepath
 
 if __name__ == '__main__':
 	print("\n----------------------------------------\n")
 	print("Hello! This is a word analyzer.\n")
-	filepath = input('Please enter path of your file: ')
+	fp = getfilepath()
 
-	print("processing file: %s" % filepath)
+	print("processing file: %s" % fp)
 
