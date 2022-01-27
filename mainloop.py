@@ -48,7 +48,7 @@ def main():
 	print("\n-----------processing file: %s-----------\n" % fp)
 
 	txt = wordfreq.openfile(fp)
-
+	print(len(txt))
 	uniqword = wordfreq.getwords(txt)
 
 	countword = wordfreq.countwords(txt, uniqword)
