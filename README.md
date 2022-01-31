@@ -9,5 +9,5 @@ once user input the filename, the program will show word frequency and display a
 ### Dependencies <br />
 see "requirement.txt" <br />
 ### Requirement
-System: latest version of Ubuntu
-Python version: 3.8, 3.9, 3.10
+System: latest version of Ubuntu <br />
+Python version: 3.8, 3.9, 3.10 <br />
