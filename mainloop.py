@@ -15,8 +15,22 @@ class wordfreq:
 	def openfile(fp):
 		f = open(fp,'r')
 		txt = f.read()
-		txt = txt.split()
+		#txt = txt.split()
 		f.close()
+		return txt
+
+	def rmvpunc(txt):
+		punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+		out = txt
+		for i in out:
+			if i in punc:
+				out = out.replace(i, "")
+
+		return out
+
+	def splitwords(out):
+		txt = out.split()
+
 		return txt
 
 	def getwords(txt):
@@ -48,13 +62,17 @@ def main():
 	print("\n-----------processing file: %s-----------\n" % fp)
 
 	txt = wordfreq.openfile(fp)
-	print(len(txt))
+	txt = wordfreq.rmvpunc(txt)
+	txt = wordfreq.splitwords(txt)
+	#print(len(txt))
 	uniqword = wordfreq.getwords(txt)
 
 	countword = wordfreq.countwords(txt, uniqword)
 
 	print(len(uniqword))
 	print(len(countword))
+	print(uniqword)
+	print(countword)
 	wordfreq.plotfreq(uniqword,countword)
 	#print("Please enter a valid path!!!")
 
