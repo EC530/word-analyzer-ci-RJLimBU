@@ -22,10 +22,10 @@ Python version: 3.8, 3.9, 3.10 <br />
 The histogram displays the word frequency in the example2.txt. The x-axis shows the distinct words <br /> 
 in the text, the y-axis shows the frequency of each word <br />
 <br />
-![histogram result](/images/sample_output)
+![histogram result](relative/images/sample_output)
 <br />
 <br />
 Here is the sample output from terminal <br />
 <br />
-![terminal result](/images/sample_output_terminal)
+![terminal result](relative/images/sample_output_terminal)
 <br />
