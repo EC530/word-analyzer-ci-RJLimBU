@@ -52,6 +52,7 @@ class wordfreq:
 		plt.bar(uniqword, countword, align = 'center')
 		plt.xlabel('Words')
 		plt.ylabel('Frequency')
+		plt.xticks(rotation = 'vertical')
 		plt.show()
 
 def main():
