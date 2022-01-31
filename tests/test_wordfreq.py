@@ -22,7 +22,7 @@ def test_countwordslen1():
 	name = wordfreq.splitwords(out)
 	uniq = wordfreq.getwords(name)
 	num = wordfreq.countwords(name, uniq)
-	assert len(name) == len(uniq)
+	assert len(num) == len(uniq)
 
 def test_countwordslen2():
 	txt = wordfreq.openfile("example2.txt")
@@ -30,4 +30,4 @@ def test_countwordslen2():
 	name = wordfreq.splitwords(out)
 	uniq = wordfreq.getwords(name)
 	num = wordfreq.countwords(name, uniq)
-	assert len(name) == len(uniq)
+	assert len(num) == len(uniq)
