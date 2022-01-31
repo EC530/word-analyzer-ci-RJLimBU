@@ -6,7 +6,7 @@ class wordfreq:
 	def __init__(self):
 		#uniqword = []
 		#countword = []
-		a = 0
+		p = 1
 
 	def getfilepath():
 		filepath = input('Please enter path of your file: ')
@@ -68,8 +68,10 @@ def main():
 
 	countword = wordfreq.countwords(txt, uniqword)
 
-	print(uniqword)
-	print(countword)
+	print("Word Frequency:\n")
+	for i in range((len(uniqword))):
+		print(uniqword[i]+": "+str(countword[i])+'\n')
+
 	wordfreq.plotfreq(uniqword,countword)
 	#print("Please enter a valid path!!!")
 
