@@ -12,7 +12,6 @@ see "requirement.txt" <br />
 System: latest version of Ubuntu <br />
 Python version: 3.8, 3.9, 3.10 <br />
 ### Unit tests
--user input
 -test the open file function and check if it correctly read words from the text file <br />
 -check if correctly remove punctuation <br />
 -correctly split strings into list of words <br /> 
