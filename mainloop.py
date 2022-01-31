@@ -20,7 +20,7 @@ class wordfreq:
 		return txt
 
 	def rmvpunc(txt):
-		punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+		punc = '''!()-[]{};:'",<>./?@#$%^&*_~'''
 		out = txt
 		for i in out:
 			if i in punc:
@@ -30,7 +30,6 @@ class wordfreq:
 
 	def splitwords(out):
 		txt = out.split()
-
 		return txt
 
 	def getwords(txt):
@@ -69,8 +68,6 @@ def main():
 
 	countword = wordfreq.countwords(txt, uniqword)
 
-	print(len(uniqword))
-	print(len(countword))
 	print(uniqword)
 	print(countword)
 	wordfreq.plotfreq(uniqword,countword)
