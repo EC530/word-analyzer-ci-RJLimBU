@@ -1,8 +1,10 @@
 # word-analyzer-ci-RJLimBU
 ## word-analyzer-ci-RJLimBU created by GitHub Classroom <br />
 ### Description <br />
-this project reads contents in a txt or PDF file, counts the word frequency <br />
+this project reads contents in a txt and PDF file, counts the word frequency <br />
 and display the histogram. NLTK stop words are removed from the count. <br />
+html format reading is still developing due to dependency issue. <br />
+logging and profiling is added to the program. <br />
 ### How to Use <br />
 -run the 'mainloop.py' file <br />
 -enter the filename with .txt or .pdf suffix in the same directory <br />

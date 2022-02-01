@@ -2,6 +2,11 @@
 import logging
 import matplotlib.pyplot as plt
 import PyPDF2
+import tracemalloc
+import cProfile
+import re
+
+cProfile.run('re.compile("foo|bar")', 'cProfileStat')
 
 logging.basicConfig(filename = 'mainloop.log', level=logging.INFO,
 	format='%(asctime)s:%(levelname)s:%(message)s')
@@ -138,4 +143,12 @@ def main():
 	logging.info('Program Done.')
 
 if __name__ == '__main__':
+	tracemalloc.start()
 	main()
+	snapshot = tracemalloc.take_snapshot()
+	top_stats = snapshot.statistics('lineno')
+	logging.info('Memory Stat(Top 10)')
+	#print("[ Top 10 ]")
+	for stat in top_stats[:10]:
+		logging.info(stat)
+		#print(stat)
