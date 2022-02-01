@@ -1,5 +1,6 @@
 #main console
 import matplotlib.pyplot as plt
+import PyPDF2
 #import numpy as np
 
 class wordfreq:
@@ -13,10 +14,28 @@ class wordfreq:
 		return filepath
 
 	def openfile(fp):
-		f = open(fp,'r')
-		txt = f.read()
-		#txt = txt.split()
-		f.close()
+		splitchar = "."
+		try:
+			suf = fp.rsplit(splitchar,1)[1]
+		except:
+			print("Please enter valid file name!\n")
+			print(exit)
+			exit()
+		if suf == "txt":
+			f = open(fp,'r')
+			txt = f.read()
+			#txt = txt.split()
+			f.close()
+		elif suf == "pdf":
+			pdfobj = open(fp, 'rb')
+			pdfreader = PyPDF2.PdfFileReader(pdfobj)
+			pgobj = pdfreader.getPage(0)
+			txt = pgobj.extractText()
+			pdfobj.close()
+		else:
+			print("Format should be txt or pdf!")
+			print(exit)
+			exit()
 		return txt
 
 	def rmvpunc(txt):

@@ -1,10 +1,10 @@
 # word-analyzer-ci-RJLimBU
 ## word-analyzer-ci-RJLimBU created by GitHub Classroom <br />
 ### Description <br />
-this project counts the word frequency in a text file and display the histogram <br />
+this project counts the word frequency in a text or PDF file and display the histogram <br />
 ### How to Use <br />
 -run the 'mainloop.py' file <br />
--enter the filename with .txt suffix in the same directory <br />
+-enter the filename with .txt or .pdf suffix in the same directory <br />
 once user input the filename, the program will show word frequency and display a histogram <br />
 ### Dependencies <br />
 see "requirement.txt" <br />
@@ -12,7 +12,7 @@ see "requirement.txt" <br />
 System: latest version of Ubuntu <br />
 Python version: 3.8, 3.9, 3.10 <br />
 ### Unit tests
--test the open file function and check if it correctly read words from the text file <br />
+-test the open file function and check if it correctly read words from the txt/pdf file <br />
 -check if correctly remove punctuation <br />
 -correctly split strings into list of words <br /> 
 -extract distinct words from the string <br />
@@ -22,6 +22,10 @@ The histogram displays the word frequency in the example2.txt. The x-axis shows 
 in the text, the y-axis shows the frequency of each word <br />
 <br />
 ![histogramResult](/images/sample_output.png)
+<br />
+This histogram displays the output from "sample.pdf" <br />
+<br />
+![histogramResultPDF](/images/sample_outputpdf.png)
 <br />
 <br />
 Here is the sample output from terminal <br />

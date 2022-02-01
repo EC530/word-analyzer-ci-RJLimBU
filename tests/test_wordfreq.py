@@ -31,3 +31,11 @@ def test_countwordslen2():
 	uniq = wordfreq.getwords(name)
 	num = wordfreq.countwords(name, uniq)
 	assert len(num) == len(uniq)
+
+def test_countwordslenpdf():
+	txt = wordfreq.openfile("sample.pdf")
+	out = wordfreq.rmvpunc(txt)
+	name = wordfreq.splitwords(out)
+	uniq = wordfreq.getwords(name)
+	num = wordfreq.countwords(name, uniq)
+	assert len(num) == len(uniq)

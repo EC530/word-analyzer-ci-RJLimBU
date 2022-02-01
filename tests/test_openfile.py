@@ -12,3 +12,7 @@ def test_openexample2():
 	name = wordfreq.openfile("example2.txt")
 	assert name[0] == 'B'
 	assert name[-1] == '!'
+
+def test_openpdf():
+	name = wordfreq.openfile("sample.pdf")
+	assert name[0] == 'A'

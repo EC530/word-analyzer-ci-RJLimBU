@@ -15,3 +15,10 @@ def test_openexample2():
 	punc = '''!()-[]{};:'",<>./?@#$%^&*_~'''
 	for i in range(len(name)):
 		assert name[i] not in punc
+
+def test_openpdf():
+	txt = wordfreq.openfile("sample.pdf")
+	name = wordfreq.rmvpunc(txt)
+	punc = '''!()-[]{};:'",<>./?@#$%^&*_~'''
+	for i in range(len(name)):
+		assert name[i] not in punc
