@@ -15,4 +15,4 @@ def test_openexample2():
 
 def test_openpdf():
 	name = wordfreq.openfile("sample.pdf")
-	assert name[0] == 'A'
+	assert "A Simple PDF File" in name
