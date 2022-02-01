@@ -23,7 +23,7 @@ def test_nltktxt():
 	for ele in NLTK:
 		assert not (ele in name)
 
-def test_nltktxt():
+def test_nltkpdf():
 	txt = wordfreq.openfile("sample.pdf")
 	out = wordfreq.rmvpunc(txt)
 	name = wordfreq.splitwords(out)
