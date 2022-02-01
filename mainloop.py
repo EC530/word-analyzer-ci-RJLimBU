@@ -1,8 +1,10 @@
 #main console
+import logging
 import matplotlib.pyplot as plt
 import PyPDF2
-#import numpy as np
 
+logging.basicConfig(filename = 'mainloop.log', level=logging.INFO,
+	format='%(asctime)s:%(levelname)s:%(message)s')
 
 class wordfreq:
 	def __init__(self):
@@ -12,6 +14,7 @@ class wordfreq:
 
 	def getfilepath():
 		filepath = input('Please enter path of your file: ')
+		logging.info('file name received: {}'.format(filepath))
 		return filepath
 
 	def openfile(fp):
@@ -19,23 +22,35 @@ class wordfreq:
 		try:
 			suf = fp.rsplit(splitchar,1)[1]
 		except:
-			print("Please enter valid file name!\n")
-			print(exit)
+			logging.error('Invalid file name: {}'.format(fp))
+			print('Program terminated due to invalid file name.')
 			exit()
+
+		logging.info('processing: {}, file type: {}'.format(fp, suf))
+
 		if suf == "txt":
-			f = open(fp,'r')
+			try:
+				f = open(fp,'r')
+			except:
+				logging.error('unable to open file: {}'.format(fp))
+				print("Fail to open file!!!")
+				exit()
 			txt = f.read()
-			#txt = txt.split()
 			f.close()
 		elif suf == "pdf":
-			pdfobj = open(fp, 'rb')
+			try:
+				pdfobj = open(fp, 'rb')
+			except:
+				logging.error('unable to open file: {}'.format(fp))
+				print("Fail to open file!!!")
+				exit()
 			pdfreader = PyPDF2.PdfFileReader(pdfobj)
 			pgobj = pdfreader.getPage(0)
 			txt = pgobj.extractText()
 			pdfobj.close()
 		else:
-			print("Format should be txt or pdf!")
-			print(exit)
+			logging.error('File {}: Format is not txt or pdf.'.format(fp))
+			print('Program terminated due to invalid file format.')
 			exit()
 		return txt
 
@@ -102,20 +117,25 @@ def main():
 	print("\n-----------processing file: %s-----------\n" % fp)
 
 	txt = wordfreq.openfile(fp)
+	logging.info('Contents retrieved from {}: {}'.format(fp, txt))
 	txt = wordfreq.rmvpunc(txt)
+	logging.info('Punctuation removed: {}'.format(txt))
 	txt = wordfreq.splitwords(txt)
-	#print(len(txt))
-	uniqword = wordfreq.getwords(txt)
+	logging.info('Split string to list of words(length={}): {}'.format(len(txt),txt))
+	uniqword = wordfreq.getwords(txt) 			#extract distinct words
+	logging.info('Distinct words extracted(length={}): {}'.format(len(uniqword),uniqword))
 	uniqword = wordfreq.rmvNLTK(uniqword)
-
+	logging.info('NLTK words removed(length={}): {}'.format(len(uniqword),uniqword))
 	countword = wordfreq.countwords(txt, uniqword)
+	logging.info('word frequency created(length={}): {}'.format(len(countword),countword))
 
 	print("Word Frequency:\n")
 	for i in range((len(uniqword))):
 		print(uniqword[i]+": "+str(countword[i])+'\n')
+		logging.info('{}: {}'.format(uniqword[i], countword[i]))
 
 	wordfreq.plotfreq(uniqword,countword)
-	#print("Please enter a valid path!!!")
+	logging.info('Program Done.')
 
 if __name__ == '__main__':
 	main()

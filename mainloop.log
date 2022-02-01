@@ -1,0 +1,145 @@
+2022-02-01 02:00:03,716:INFO:file name received: sample.pdf
+2022-02-01 02:00:03,716:INFO:processing: sample.pdf, file type: pdf
+2022-02-01 02:00:03,725:INFO:Contents retrieved from sample.pdf:  A Simple PDF File  This is a small demonstration .pdf file -  just for use in the Virtual Mechanics tutorials. More text. And more  text. And more text. And more text. And more text.  And more text. And more text. And more text. And more text. And more  text. And more text. Boring, zzzzz. And more text. And more text. And  more text. And more text. And more text. And more text. And more text.  And more text. And more text.  And more text. And more text. And more text. And more text. And more  text. And more text. And more text. Even more. Continued on page 2 ...
+2022-02-01 02:00:03,725:INFO:Punctuation removed:  A Simple PDF File  This is a small demonstration pdf file   just for use in the Virtual Mechanics tutorials More text And more  text And more text And more text And more text  And more text And more text And more text And more text And more  text And more text Boring zzzzz And more text And more text And  more text And more text And more text And more text And more text  And more text And more text  And more text And more text And more text And more text And more  text And more text And more text Even more Continued on page 2 
+2022-02-01 02:00:03,726:INFO:Split string to list of words(length=107): ['A', 'Simple', 'PDF', 'File', 'This', 'is', 'a', 'small', 'demonstration', 'pdf', 'file', 'just', 'for', 'use', 'in', 'the', 'Virtual', 'Mechanics', 'tutorials', 'More', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'Boring', 'zzzzz', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'Even', 'more', 'Continued', 'on', 'page', '2']
+2022-02-01 02:00:03,726:INFO:Distinct words extracted(length=30): ['A', 'Simple', 'PDF', 'File', 'This', 'is', 'a', 'small', 'demonstration', 'pdf', 'file', 'just', 'for', 'use', 'in', 'the', 'Virtual', 'Mechanics', 'tutorials', 'More', 'text', 'And', 'more', 'Boring', 'zzzzz', 'Even', 'Continued', 'on', 'page', '2']
+2022-02-01 02:00:03,726:INFO:NLTK words removed(length=22): ['A', 'Simple', 'PDF', 'File', 'This', 'small', 'demonstration', 'pdf', 'file', 'use', 'Virtual', 'Mechanics', 'tutorials', 'More', 'text', 'And', 'Boring', 'zzzzz', 'Even', 'Continued', 'page', '2']
+2022-02-01 02:00:03,726:INFO:word frequency created(length=22): [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 27, 26, 1, 1, 1, 1, 1, 1]
+2022-02-01 02:00:03,726:INFO:A: 1
+2022-02-01 02:00:03,726:INFO:Simple: 1
+2022-02-01 02:00:03,726:INFO:PDF: 1
+2022-02-01 02:00:03,726:INFO:File: 1
+2022-02-01 02:00:03,726:INFO:This: 1
+2022-02-01 02:00:03,726:INFO:small: 1
+2022-02-01 02:00:03,726:INFO:demonstration: 1
+2022-02-01 02:00:03,727:INFO:pdf: 1
+2022-02-01 02:00:03,727:INFO:file: 1
+2022-02-01 02:00:03,727:INFO:use: 1
+2022-02-01 02:00:03,727:INFO:Virtual: 1
+2022-02-01 02:00:03,727:INFO:Mechanics: 1
+2022-02-01 02:00:03,727:INFO:tutorials: 1
+2022-02-01 02:00:03,727:INFO:More: 1
+2022-02-01 02:00:03,727:INFO:text: 27
+2022-02-01 02:00:03,727:INFO:And: 26
+2022-02-01 02:00:03,727:INFO:Boring: 1
+2022-02-01 02:00:03,727:INFO:zzzzz: 1
+2022-02-01 02:00:03,727:INFO:Even: 1
+2022-02-01 02:00:03,728:INFO:Continued: 1
+2022-02-01 02:00:03,728:INFO:page: 1
+2022-02-01 02:00:03,728:INFO:2: 1
+2022-02-01 02:00:06,091:INFO:Program Done.
+2022-02-01 02:03:29,490:INFO:file name received: example2.txt
+2022-02-01 02:03:29,492:INFO:processing: example2.txt, file type: txt
+2022-02-01 02:03:29,496:INFO:Contents retrieved from example2.txt: Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+2022-02-01 02:03:29,496:INFO:Punctuation removed: Beautiful is better than ugly
+Explicit is better than implicit
+Simple is better than complex
+Complex is better than complicated
+Flat is better than nested
+Sparse is better than dense
+Readability counts
+Special cases arent special enough to break the rules
+Although practicality beats purity
+Errors should never pass silently
+Unless explicitly silenced
+In the face of ambiguity refuse the temptation to guess
+There should be one and preferably only one obvious way to do it
+Although that way may not be obvious at first unless youre Dutch
+Now is better than never
+Although never is often better than right now
+If the implementation is hard to explain its a bad idea
+If the implementation is easy to explain it may be a good idea
+Namespaces are one honking great idea  lets do more of those
+2022-02-01 02:03:29,496:INFO:Split string to list of words(length=136): ['Beautiful', 'is', 'better', 'than', 'ugly', 'Explicit', 'is', 'better', 'than', 'implicit', 'Simple', 'is', 'better', 'than', 'complex', 'Complex', 'is', 'better', 'than', 'complicated', 'Flat', 'is', 'better', 'than', 'nested', 'Sparse', 'is', 'better', 'than', 'dense', 'Readability', 'counts', 'Special', 'cases', 'arent', 'special', 'enough', 'to', 'break', 'the', 'rules', 'Although', 'practicality', 'beats', 'purity', 'Errors', 'should', 'never', 'pass', 'silently', 'Unless', 'explicitly', 'silenced', 'In', 'the', 'face', 'of', 'ambiguity', 'refuse', 'the', 'temptation', 'to', 'guess', 'There', 'should', 'be', 'one', 'and', 'preferably', 'only', 'one', 'obvious', 'way', 'to', 'do', 'it', 'Although', 'that', 'way', 'may', 'not', 'be', 'obvious', 'at', 'first', 'unless', 'youre', 'Dutch', 'Now', 'is', 'better', 'than', 'never', 'Although', 'never', 'is', 'often', 'better', 'than', 'right', 'now', 'If', 'the', 'implementation', 'is', 'hard', 'to', 'explain', 'its', 'a', 'bad', 'idea', 'If', 'the', 'implementation', 'is', 'easy', 'to', 'explain', 'it', 'may', 'be', 'a', 'good', 'idea', 'Namespaces', 'are', 'one', 'honking', 'great', 'idea', 'lets', 'do', 'more', 'of', 'those']
+2022-02-01 02:03:29,496:INFO:Distinct words extracted(length=84): ['Beautiful', 'is', 'better', 'than', 'ugly', 'Explicit', 'implicit', 'Simple', 'complex', 'Complex', 'complicated', 'Flat', 'nested', 'Sparse', 'dense', 'Readability', 'counts', 'Special', 'cases', 'arent', 'special', 'enough', 'to', 'break', 'the', 'rules', 'Although', 'practicality', 'beats', 'purity', 'Errors', 'should', 'never', 'pass', 'silently', 'Unless', 'explicitly', 'silenced', 'In', 'face', 'of', 'ambiguity', 'refuse', 'temptation', 'guess', 'There', 'be', 'one', 'and', 'preferably', 'only', 'obvious', 'way', 'do', 'it', 'that', 'may', 'not', 'at', 'first', 'unless', 'youre', 'Dutch', 'Now', 'often', 'right', 'now', 'If', 'implementation', 'hard', 'explain', 'its', 'a', 'bad', 'idea', 'easy', 'good', 'Namespaces', 'are', 'honking', 'great', 'lets', 'more', 'those']
+2022-02-01 02:03:29,497:INFO:NLTK words removed(length=64): ['Beautiful', 'better', 'ugly', 'Explicit', 'implicit', 'Simple', 'complex', 'Complex', 'complicated', 'Flat', 'nested', 'Sparse', 'dense', 'Readability', 'counts', 'Special', 'cases', 'arent', 'special', 'enough', 'break', 'rules', 'Although', 'practicality', 'beats', 'purity', 'Errors', 'never', 'pass', 'silently', 'Unless', 'explicitly', 'silenced', 'In', 'face', 'ambiguity', 'refuse', 'temptation', 'guess', 'There', 'one', 'preferably', 'obvious', 'way', 'may', 'first', 'unless', 'youre', 'Dutch', 'Now', 'often', 'right', 'If', 'implementation', 'hard', 'explain', 'bad', 'idea', 'easy', 'good', 'Namespaces', 'honking', 'great', 'lets']
+2022-02-01 02:03:29,497:INFO:word frequency created(length=64): [1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 3, 1, 1, 1, 1, 1, 1]
+2022-02-01 02:03:29,497:INFO:Beautiful: 1
+2022-02-01 02:03:29,497:INFO:better: 8
+2022-02-01 02:03:29,497:INFO:ugly: 1
+2022-02-01 02:03:29,498:INFO:Explicit: 1
+2022-02-01 02:03:29,498:INFO:implicit: 1
+2022-02-01 02:03:29,498:INFO:Simple: 1
+2022-02-01 02:03:29,498:INFO:complex: 1
+2022-02-01 02:03:29,498:INFO:Complex: 1
+2022-02-01 02:03:29,498:INFO:complicated: 1
+2022-02-01 02:03:29,498:INFO:Flat: 1
+2022-02-01 02:03:29,498:INFO:nested: 1
+2022-02-01 02:03:29,498:INFO:Sparse: 1
+2022-02-01 02:03:29,498:INFO:dense: 1
+2022-02-01 02:03:29,498:INFO:Readability: 1
+2022-02-01 02:03:29,499:INFO:counts: 1
+2022-02-01 02:03:29,499:INFO:Special: 1
+2022-02-01 02:03:29,499:INFO:cases: 1
+2022-02-01 02:03:29,499:INFO:arent: 1
+2022-02-01 02:03:29,499:INFO:special: 1
+2022-02-01 02:03:29,499:INFO:enough: 1
+2022-02-01 02:03:29,499:INFO:break: 1
+2022-02-01 02:03:29,499:INFO:rules: 1
+2022-02-01 02:03:29,499:INFO:Although: 3
+2022-02-01 02:03:29,499:INFO:practicality: 1
+2022-02-01 02:03:29,499:INFO:beats: 1
+2022-02-01 02:03:29,499:INFO:purity: 1
+2022-02-01 02:03:29,500:INFO:Errors: 1
+2022-02-01 02:03:29,500:INFO:never: 3
+2022-02-01 02:03:29,500:INFO:pass: 1
+2022-02-01 02:03:29,500:INFO:silently: 1
+2022-02-01 02:03:29,500:INFO:Unless: 1
+2022-02-01 02:03:29,500:INFO:explicitly: 1
+2022-02-01 02:03:29,500:INFO:silenced: 1
+2022-02-01 02:03:29,500:INFO:In: 1
+2022-02-01 02:03:29,500:INFO:face: 1
+2022-02-01 02:03:29,500:INFO:ambiguity: 1
+2022-02-01 02:03:29,500:INFO:refuse: 1
+2022-02-01 02:03:29,501:INFO:temptation: 1
+2022-02-01 02:03:29,501:INFO:guess: 1
+2022-02-01 02:03:29,501:INFO:There: 1
+2022-02-01 02:03:29,501:INFO:one: 3
+2022-02-01 02:03:29,501:INFO:preferably: 1
+2022-02-01 02:03:29,501:INFO:obvious: 2
+2022-02-01 02:03:29,501:INFO:way: 2
+2022-02-01 02:03:29,501:INFO:may: 2
+2022-02-01 02:03:29,501:INFO:first: 1
+2022-02-01 02:03:29,501:INFO:unless: 1
+2022-02-01 02:03:29,501:INFO:youre: 1
+2022-02-01 02:03:29,501:INFO:Dutch: 1
+2022-02-01 02:03:29,502:INFO:Now: 1
+2022-02-01 02:03:29,502:INFO:often: 1
+2022-02-01 02:03:29,502:INFO:right: 1
+2022-02-01 02:03:29,502:INFO:If: 2
+2022-02-01 02:03:29,502:INFO:implementation: 2
+2022-02-01 02:03:29,502:INFO:hard: 1
+2022-02-01 02:03:29,502:INFO:explain: 2
+2022-02-01 02:03:29,502:INFO:bad: 1
+2022-02-01 02:03:29,503:INFO:idea: 3
+2022-02-01 02:03:29,503:INFO:easy: 1
+2022-02-01 02:03:29,503:INFO:good: 1
+2022-02-01 02:03:29,503:INFO:Namespaces: 1
+2022-02-01 02:03:29,503:INFO:honking: 1
+2022-02-01 02:03:29,503:INFO:great: 1
+2022-02-01 02:03:29,503:INFO:lets: 1
+2022-02-01 02:03:46,662:INFO:Program Done.
+2022-02-01 02:04:43,219:INFO:file name received: example.pdf
+2022-02-01 02:04:43,219:INFO:processing: example.pdf, file type: pdf
+2022-02-01 02:04:43,219:ERROR:unable to open file: example.pdf
+2022-02-01 02:05:13,838:INFO:file name received: abda
+2022-02-01 02:05:13,839:ERROR:Invalid file name: abda
