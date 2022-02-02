@@ -1,0 +1,943 @@
+2022-02-01 02:44:36,661:INFO:file name received: sample.pdf
+2022-02-01 02:44:36,661:INFO:processing: sample.pdf, file type: pdf
+2022-02-01 02:44:36,678:INFO:Contents retrieved from sample.pdf:  A Simple PDF File  This is a small demonstration .pdf file -  just for use in the Virtual Mechanics tutorials. More text. And more  text. And more text. And more text. And more text.  And more text. And more text. And more text. And more text. And more  text. And more text. Boring, zzzzz. And more text. And more text. And  more text. And more text. And more text. And more text. And more text.  And more text. And more text.  And more text. And more text. And more text. And more text. And more  text. And more text. And more text. Even more. Continued on page 2 ...
+2022-02-01 02:44:36,678:INFO:Punctuation removed:  A Simple PDF File  This is a small demonstration pdf file   just for use in the Virtual Mechanics tutorials More text And more  text And more text And more text And more text  And more text And more text And more text And more text And more  text And more text Boring zzzzz And more text And more text And  more text And more text And more text And more text And more text  And more text And more text  And more text And more text And more text And more text And more  text And more text And more text Even more Continued on page 2 
+2022-02-01 02:44:36,678:INFO:Split string to list of words(length=107): ['A', 'Simple', 'PDF', 'File', 'This', 'is', 'a', 'small', 'demonstration', 'pdf', 'file', 'just', 'for', 'use', 'in', 'the', 'Virtual', 'Mechanics', 'tutorials', 'More', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'Boring', 'zzzzz', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'And', 'more', 'text', 'Even', 'more', 'Continued', 'on', 'page', '2']
+2022-02-01 02:44:36,679:INFO:Distinct words extracted(length=30): ['A', 'Simple', 'PDF', 'File', 'This', 'is', 'a', 'small', 'demonstration', 'pdf', 'file', 'just', 'for', 'use', 'in', 'the', 'Virtual', 'Mechanics', 'tutorials', 'More', 'text', 'And', 'more', 'Boring', 'zzzzz', 'Even', 'Continued', 'on', 'page', '2']
+2022-02-01 02:44:36,679:INFO:NLTK words removed(length=22): ['A', 'Simple', 'PDF', 'File', 'This', 'small', 'demonstration', 'pdf', 'file', 'use', 'Virtual', 'Mechanics', 'tutorials', 'More', 'text', 'And', 'Boring', 'zzzzz', 'Even', 'Continued', 'page', '2']
+2022-02-01 02:44:36,679:INFO:word frequency created(length=22): [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 27, 26, 1, 1, 1, 1, 1, 1]
+2022-02-01 02:44:36,679:INFO:A: 1
+2022-02-01 02:44:36,680:INFO:Simple: 1
+2022-02-01 02:44:36,680:INFO:PDF: 1
+2022-02-01 02:44:36,680:INFO:File: 1
+2022-02-01 02:44:36,680:INFO:This: 1
+2022-02-01 02:44:36,681:INFO:small: 1
+2022-02-01 02:44:36,681:INFO:demonstration: 1
+2022-02-01 02:44:36,681:INFO:pdf: 1
+2022-02-01 02:44:36,681:INFO:file: 1
+2022-02-01 02:44:36,682:INFO:use: 1
+2022-02-01 02:44:36,682:INFO:Virtual: 1
+2022-02-01 02:44:36,683:INFO:Mechanics: 1
+2022-02-01 02:44:36,683:INFO:tutorials: 1
+2022-02-01 02:44:36,683:INFO:More: 1
+2022-02-01 02:44:36,683:INFO:text: 27
+2022-02-01 02:44:36,683:INFO:And: 26
+2022-02-01 02:44:36,684:INFO:Boring: 1
+2022-02-01 02:44:36,684:INFO:zzzzz: 1
+2022-02-01 02:44:36,684:INFO:Even: 1
+2022-02-01 02:44:36,684:INFO:Continued: 1
+2022-02-01 02:44:36,684:INFO:page: 1
+2022-02-01 02:44:36,684:INFO:2: 1
+2022-02-01 02:44:39,402:INFO:Program Done.
+2022-02-01 02:44:54,509:INFO:file name received: example2.txt
+2022-02-01 02:44:54,510:INFO:processing: example2.txt, file type: txt
+2022-02-01 02:44:54,512:INFO:Contents retrieved from example2.txt: Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+2022-02-01 02:44:54,513:INFO:Punctuation removed: Beautiful is better than ugly
+Explicit is better than implicit
+Simple is better than complex
+Complex is better than complicated
+Flat is better than nested
+Sparse is better than dense
+Readability counts
+Special cases arent special enough to break the rules
+Although practicality beats purity
+Errors should never pass silently
+Unless explicitly silenced
+In the face of ambiguity refuse the temptation to guess
+There should be one and preferably only one obvious way to do it
+Although that way may not be obvious at first unless youre Dutch
+Now is better than never
+Although never is often better than right now
+If the implementation is hard to explain its a bad idea
+If the implementation is easy to explain it may be a good idea
+Namespaces are one honking great idea  lets do more of those
+2022-02-01 02:44:54,513:INFO:Split string to list of words(length=136): ['Beautiful', 'is', 'better', 'than', 'ugly', 'Explicit', 'is', 'better', 'than', 'implicit', 'Simple', 'is', 'better', 'than', 'complex', 'Complex', 'is', 'better', 'than', 'complicated', 'Flat', 'is', 'better', 'than', 'nested', 'Sparse', 'is', 'better', 'than', 'dense', 'Readability', 'counts', 'Special', 'cases', 'arent', 'special', 'enough', 'to', 'break', 'the', 'rules', 'Although', 'practicality', 'beats', 'purity', 'Errors', 'should', 'never', 'pass', 'silently', 'Unless', 'explicitly', 'silenced', 'In', 'the', 'face', 'of', 'ambiguity', 'refuse', 'the', 'temptation', 'to', 'guess', 'There', 'should', 'be', 'one', 'and', 'preferably', 'only', 'one', 'obvious', 'way', 'to', 'do', 'it', 'Although', 'that', 'way', 'may', 'not', 'be', 'obvious', 'at', 'first', 'unless', 'youre', 'Dutch', 'Now', 'is', 'better', 'than', 'never', 'Although', 'never', 'is', 'often', 'better', 'than', 'right', 'now', 'If', 'the', 'implementation', 'is', 'hard', 'to', 'explain', 'its', 'a', 'bad', 'idea', 'If', 'the', 'implementation', 'is', 'easy', 'to', 'explain', 'it', 'may', 'be', 'a', 'good', 'idea', 'Namespaces', 'are', 'one', 'honking', 'great', 'idea', 'lets', 'do', 'more', 'of', 'those']
+2022-02-01 02:44:54,514:INFO:Distinct words extracted(length=84): ['Beautiful', 'is', 'better', 'than', 'ugly', 'Explicit', 'implicit', 'Simple', 'complex', 'Complex', 'complicated', 'Flat', 'nested', 'Sparse', 'dense', 'Readability', 'counts', 'Special', 'cases', 'arent', 'special', 'enough', 'to', 'break', 'the', 'rules', 'Although', 'practicality', 'beats', 'purity', 'Errors', 'should', 'never', 'pass', 'silently', 'Unless', 'explicitly', 'silenced', 'In', 'face', 'of', 'ambiguity', 'refuse', 'temptation', 'guess', 'There', 'be', 'one', 'and', 'preferably', 'only', 'obvious', 'way', 'do', 'it', 'that', 'may', 'not', 'at', 'first', 'unless', 'youre', 'Dutch', 'Now', 'often', 'right', 'now', 'If', 'implementation', 'hard', 'explain', 'its', 'a', 'bad', 'idea', 'easy', 'good', 'Namespaces', 'are', 'honking', 'great', 'lets', 'more', 'those']
+2022-02-01 02:44:54,515:INFO:NLTK words removed(length=64): ['Beautiful', 'better', 'ugly', 'Explicit', 'implicit', 'Simple', 'complex', 'Complex', 'complicated', 'Flat', 'nested', 'Sparse', 'dense', 'Readability', 'counts', 'Special', 'cases', 'arent', 'special', 'enough', 'break', 'rules', 'Although', 'practicality', 'beats', 'purity', 'Errors', 'never', 'pass', 'silently', 'Unless', 'explicitly', 'silenced', 'In', 'face', 'ambiguity', 'refuse', 'temptation', 'guess', 'There', 'one', 'preferably', 'obvious', 'way', 'may', 'first', 'unless', 'youre', 'Dutch', 'Now', 'often', 'right', 'If', 'implementation', 'hard', 'explain', 'bad', 'idea', 'easy', 'good', 'Namespaces', 'honking', 'great', 'lets']
+2022-02-01 02:44:54,515:INFO:word frequency created(length=64): [1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 3, 1, 1, 1, 1, 1, 1]
+2022-02-01 02:44:54,515:INFO:Beautiful: 1
+2022-02-01 02:44:54,516:INFO:better: 8
+2022-02-01 02:44:54,516:INFO:ugly: 1
+2022-02-01 02:44:54,517:INFO:Explicit: 1
+2022-02-01 02:44:54,517:INFO:implicit: 1
+2022-02-01 02:44:54,517:INFO:Simple: 1
+2022-02-01 02:44:54,518:INFO:complex: 1
+2022-02-01 02:44:54,518:INFO:Complex: 1
+2022-02-01 02:44:54,518:INFO:complicated: 1
+2022-02-01 02:44:54,519:INFO:Flat: 1
+2022-02-01 02:44:54,519:INFO:nested: 1
+2022-02-01 02:44:54,519:INFO:Sparse: 1
+2022-02-01 02:44:54,519:INFO:dense: 1
+2022-02-01 02:44:54,520:INFO:Readability: 1
+2022-02-01 02:44:54,520:INFO:counts: 1
+2022-02-01 02:44:54,520:INFO:Special: 1
+2022-02-01 02:44:54,520:INFO:cases: 1
+2022-02-01 02:44:54,521:INFO:arent: 1
+2022-02-01 02:44:54,521:INFO:special: 1
+2022-02-01 02:44:54,521:INFO:enough: 1
+2022-02-01 02:44:54,521:INFO:break: 1
+2022-02-01 02:44:54,522:INFO:rules: 1
+2022-02-01 02:44:54,522:INFO:Although: 3
+2022-02-01 02:44:54,522:INFO:practicality: 1
+2022-02-01 02:44:54,522:INFO:beats: 1
+2022-02-01 02:44:54,523:INFO:purity: 1
+2022-02-01 02:44:54,523:INFO:Errors: 1
+2022-02-01 02:44:54,523:INFO:never: 3
+2022-02-01 02:44:54,523:INFO:pass: 1
+2022-02-01 02:44:54,523:INFO:silently: 1
+2022-02-01 02:44:54,524:INFO:Unless: 1
+2022-02-01 02:44:54,524:INFO:explicitly: 1
+2022-02-01 02:44:54,524:INFO:silenced: 1
+2022-02-01 02:44:54,524:INFO:In: 1
+2022-02-01 02:44:54,524:INFO:face: 1
+2022-02-01 02:44:54,524:INFO:ambiguity: 1
+2022-02-01 02:44:54,525:INFO:refuse: 1
+2022-02-01 02:44:54,525:INFO:temptation: 1
+2022-02-01 02:44:54,525:INFO:guess: 1
+2022-02-01 02:44:54,525:INFO:There: 1
+2022-02-01 02:44:54,525:INFO:one: 3
+2022-02-01 02:44:54,525:INFO:preferably: 1
+2022-02-01 02:44:54,526:INFO:obvious: 2
+2022-02-01 02:44:54,526:INFO:way: 2
+2022-02-01 02:44:54,526:INFO:may: 2
+2022-02-01 02:44:54,526:INFO:first: 1
+2022-02-01 02:44:54,526:INFO:unless: 1
+2022-02-01 02:44:54,526:INFO:youre: 1
+2022-02-01 02:44:54,527:INFO:Dutch: 1
+2022-02-01 02:44:54,527:INFO:Now: 1
+2022-02-01 02:44:54,527:INFO:often: 1
+2022-02-01 02:44:54,527:INFO:right: 1
+2022-02-01 02:44:54,527:INFO:If: 2
+2022-02-01 02:44:54,527:INFO:implementation: 2
+2022-02-01 02:44:54,528:INFO:hard: 1
+2022-02-01 02:44:54,528:INFO:explain: 2
+2022-02-01 02:44:54,528:INFO:bad: 1
+2022-02-01 02:44:54,528:INFO:idea: 3
+2022-02-01 02:44:54,528:INFO:easy: 1
+2022-02-01 02:44:54,528:INFO:good: 1
+2022-02-01 02:44:54,529:INFO:Namespaces: 1
+2022-02-01 02:44:54,529:INFO:honking: 1
+2022-02-01 02:44:54,529:INFO:great: 1
+2022-02-01 02:44:54,529:INFO:lets: 1
+2022-02-01 02:44:56,979:INFO:Program Done.
+2022-02-01 02:45:12,340:INFO:file name received: djka
+2022-02-01 02:45:12,340:ERROR:Invalid file name: djka
+2022-02-02 00:34:16,794:INFO:file name received: sample.html
+2022-02-02 00:34:16,798:INFO:processing: sample.html, file type: html
+2022-02-02 00:34:16,802:INFO:Contents retrieved from sample.html: <!DOCTYPE html>
+<html>
+<head>
+<title>Header</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h2>Quotes From George Washington</h2>
+<p>
+          “A primary object should be the education of our youth in the science of government. In a republic, what species of knowledge can be equally important? And what duty more pressing than communicating it to those who are to be the future guardians of the liberties of the country?”
+        </p>
+<p>
+          “Be courteous to all, but intimate with few, and let those few be well tried before you give them your confidence. True friendship is a plant of slow growth, and must undergo and withstand the shocks of adversity before it is entitled to appellation. ”
+        </p>
+</body>
+</html>
+2022-02-02 00:38:41,104:INFO:file name received: sample.html
+2022-02-02 00:38:41,104:INFO:processing: sample.html, file type: html
+2022-02-02 00:38:41,107:INFO:Contents retrieved from sample.html: 
+          “A primary object should be the education of our youth in the science of government. In a republic, what species of knowledge can be equally important? And what duty more pressing than communicating it to those who are to be the future guardians of the liberties of the country?”
+        
+2022-02-02 00:38:41,107:INFO:Punctuation removed: 
+          “A primary object should be the education of our youth in the science of government In a republic what species of knowledge can be equally important And what duty more pressing than communicating it to those who are to be the future guardians of the liberties of the country”
+        
+2022-02-02 00:38:41,110:INFO:Split string to list of words(length=49): ['“A', 'primary', 'object', 'should', 'be', 'the', 'education', 'of', 'our', 'youth', 'in', 'the', 'science', 'of', 'government', 'In', 'a', 'republic', 'what', 'species', 'of', 'knowledge', 'can', 'be', 'equally', 'important', 'And', 'what', 'duty', 'more', 'pressing', 'than', 'communicating', 'it', 'to', 'those', 'who', 'are', 'to', 'be', 'the', 'future', 'guardians', 'of', 'the', 'liberties', 'of', 'the', 'country”']
+2022-02-02 00:38:41,110:INFO:Distinct words extracted(length=37): ['“A', 'primary', 'object', 'should', 'be', 'the', 'education', 'of', 'our', 'youth', 'in', 'science', 'government', 'In', 'a', 'republic', 'what', 'species', 'knowledge', 'can', 'equally', 'important', 'And', 'duty', 'more', 'pressing', 'than', 'communicating', 'it', 'to', 'those', 'who', 'are', 'future', 'guardians', 'liberties', 'country”']
+2022-02-02 00:38:41,110:INFO:NLTK words removed(length=21): ['“A', 'primary', 'object', 'education', 'youth', 'science', 'government', 'In', 'republic', 'species', 'knowledge', 'equally', 'important', 'And', 'duty', 'pressing', 'communicating', 'future', 'guardians', 'liberties', 'country”']
+2022-02-02 00:38:41,110:INFO:word frequency created(length=21): [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:38:41,111:INFO:“A: 1
+2022-02-02 00:38:41,111:INFO:primary: 1
+2022-02-02 00:38:41,111:INFO:object: 1
+2022-02-02 00:38:41,111:INFO:education: 1
+2022-02-02 00:38:41,112:INFO:youth: 1
+2022-02-02 00:38:41,112:INFO:science: 1
+2022-02-02 00:38:41,112:INFO:government: 1
+2022-02-02 00:38:41,112:INFO:In: 1
+2022-02-02 00:38:41,112:INFO:republic: 1
+2022-02-02 00:38:41,113:INFO:species: 1
+2022-02-02 00:38:41,113:INFO:knowledge: 1
+2022-02-02 00:38:41,113:INFO:equally: 1
+2022-02-02 00:38:41,113:INFO:important: 1
+2022-02-02 00:38:41,113:INFO:And: 1
+2022-02-02 00:38:41,113:INFO:duty: 1
+2022-02-02 00:38:41,113:INFO:pressing: 1
+2022-02-02 00:38:41,113:INFO:communicating: 1
+2022-02-02 00:38:41,114:INFO:future: 1
+2022-02-02 00:38:41,114:INFO:guardians: 1
+2022-02-02 00:38:41,114:INFO:liberties: 1
+2022-02-02 00:38:41,114:INFO:country”: 1
+2022-02-02 00:38:55,555:INFO:Program Done.
+2022-02-02 00:44:25,497:INFO:file name received: sample.html
+2022-02-02 00:44:25,499:INFO:processing: sample.html, file type: html
+2022-02-02 00:44:25,506:INFO:Contents retrieved from sample.html: 
+          Our constitution does not copy the laws of neighbouring states; we are rather a pattern to others than imitators ourselves. Its administration favours the many instead of the few; this is why it is called a democracy. If we look to the laws, they afford equal justice to all in their private differences; if no social standing, advancement in public life falls to reputation for capacity, class considerations not being allowed to interfere with merit; nor again does poverty bar the way, if a man is able to serve the state, he is not hindered by the obscurity of his condition. The freedom which we enjoy in our government extends also to our ordinary life. There, far from exercising a jealous surveillance over each other, we do not feel called upon to be angry with our neighbour for doing what he likes, or even to indulge in those injurious looks which cannot fail to be offensive, although they inflict no positive penalty. But all this case in our private relations does not make us lawless as citizens. Against this fear is our chief safeguard, teaching us to obey the magistrates and the laws, particularly such as regard the protection of the injured, whether they are actually on the statute book, or belong to that code which, although unwritten, yet cannot be broken without acknowledged disgrace.
+        
+2022-02-02 00:44:25,506:INFO:Punctuation removed: 
+          Our constitution does not copy the laws of neighbouring states we are rather a pattern to others than imitators ourselves Its administration favours the many instead of the few this is why it is called a democracy If we look to the laws they afford equal justice to all in their private differences if no social standing advancement in public life falls to reputation for capacity class considerations not being allowed to interfere with merit nor again does poverty bar the way if a man is able to serve the state he is not hindered by the obscurity of his condition The freedom which we enjoy in our government extends also to our ordinary life There far from exercising a jealous surveillance over each other we do not feel called upon to be angry with our neighbour for doing what he likes or even to indulge in those injurious looks which cannot fail to be offensive although they inflict no positive penalty But all this case in our private relations does not make us lawless as citizens Against this fear is our chief safeguard teaching us to obey the magistrates and the laws particularly such as regard the protection of the injured whether they are actually on the statute book or belong to that code which although unwritten yet cannot be broken without acknowledged disgrace
+        
+2022-02-02 00:44:25,507:INFO:Split string to list of words(length=225): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'the', 'many', 'instead', 'of', 'the', 'few', 'this', 'is', 'why', 'it', 'is', 'called', 'a', 'democracy', 'If', 'we', 'look', 'to', 'the', 'laws', 'they', 'afford', 'equal', 'justice', 'to', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'in', 'public', 'life', 'falls', 'to', 'reputation', 'for', 'capacity', 'class', 'considerations', 'not', 'being', 'allowed', 'to', 'interfere', 'with', 'merit', 'nor', 'again', 'does', 'poverty', 'bar', 'the', 'way', 'if', 'a', 'man', 'is', 'able', 'to', 'serve', 'the', 'state', 'he', 'is', 'not', 'hindered', 'by', 'the', 'obscurity', 'of', 'his', 'condition', 'The', 'freedom', 'which', 'we', 'enjoy', 'in', 'our', 'government', 'extends', 'also', 'to', 'our', 'ordinary', 'life', 'There', 'far', 'from', 'exercising', 'a', 'jealous', 'surveillance', 'over', 'each', 'other', 'we', 'do', 'not', 'feel', 'called', 'upon', 'to', 'be', 'angry', 'with', 'our', 'neighbour', 'for', 'doing', 'what', 'he', 'likes', 'or', 'even', 'to', 'indulge', 'in', 'those', 'injurious', 'looks', 'which', 'cannot', 'fail', 'to', 'be', 'offensive', 'although', 'they', 'inflict', 'no', 'positive', 'penalty', 'But', 'all', 'this', 'case', 'in', 'our', 'private', 'relations', 'does', 'not', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'this', 'fear', 'is', 'our', 'chief', 'safeguard', 'teaching', 'us', 'to', 'obey', 'the', 'magistrates', 'and', 'the', 'laws', 'particularly', 'such', 'as', 'regard', 'the', 'protection', 'of', 'the', 'injured', 'whether', 'they', 'are', 'actually', 'on', 'the', 'statute', 'book', 'or', 'belong', 'to', 'that', 'code', 'which', 'although', 'unwritten', 'yet', 'cannot', 'be', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:44:25,508:INFO:Distinct words extracted(length=151): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'many', 'instead', 'few', 'this', 'is', 'why', 'it', 'called', 'democracy', 'If', 'look', 'they', 'afford', 'equal', 'justice', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'for', 'capacity', 'class', 'considerations', 'being', 'allowed', 'interfere', 'with', 'merit', 'nor', 'again', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'he', 'hindered', 'by', 'obscurity', 'his', 'condition', 'The', 'freedom', 'which', 'enjoy', 'our', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'from', 'exercising', 'jealous', 'surveillance', 'over', 'each', 'other', 'do', 'feel', 'upon', 'be', 'angry', 'neighbour', 'doing', 'what', 'likes', 'or', 'even', 'indulge', 'those', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'and', 'particularly', 'such', 'regard', 'protection', 'injured', 'whether', 'actually', 'on', 'statute', 'book', 'belong', 'that', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:44:25,508:INFO:NLTK words removed(length=105): ['Our', 'constitution', 'copy', 'laws', 'neighbouring', 'states', 'rather', 'pattern', 'others', 'imitators', 'Its', 'administration', 'favours', 'many', 'instead', 'called', 'democracy', 'If', 'look', 'afford', 'equal', 'justice', 'private', 'differences', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'capacity', 'class', 'considerations', 'allowed', 'interfere', 'merit', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'hindered', 'obscurity', 'condition', 'The', 'freedom', 'enjoy', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'exercising', 'jealous', 'surveillance', 'feel', 'upon', 'angry', 'neighbour', 'likes', 'even', 'indulge', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'particularly', 'regard', 'protection', 'injured', 'whether', 'actually', 'statute', 'book', 'belong', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:44:25,509:INFO:word frequency created(length=105): [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:44:25,509:INFO:Our: 1
+2022-02-02 00:44:25,509:INFO:constitution: 1
+2022-02-02 00:44:25,510:INFO:copy: 1
+2022-02-02 00:44:25,510:INFO:laws: 3
+2022-02-02 00:44:25,510:INFO:neighbouring: 1
+2022-02-02 00:44:25,510:INFO:states: 1
+2022-02-02 00:44:25,510:INFO:rather: 1
+2022-02-02 00:44:25,510:INFO:pattern: 1
+2022-02-02 00:44:25,510:INFO:others: 1
+2022-02-02 00:44:25,510:INFO:imitators: 1
+2022-02-02 00:44:25,511:INFO:Its: 1
+2022-02-02 00:44:25,511:INFO:administration: 1
+2022-02-02 00:44:25,511:INFO:favours: 1
+2022-02-02 00:44:25,511:INFO:many: 1
+2022-02-02 00:44:25,512:INFO:instead: 1
+2022-02-02 00:44:25,512:INFO:called: 2
+2022-02-02 00:44:25,512:INFO:democracy: 1
+2022-02-02 00:44:25,512:INFO:If: 1
+2022-02-02 00:44:25,512:INFO:look: 1
+2022-02-02 00:44:25,512:INFO:afford: 1
+2022-02-02 00:44:25,513:INFO:equal: 1
+2022-02-02 00:44:25,513:INFO:justice: 1
+2022-02-02 00:44:25,513:INFO:private: 2
+2022-02-02 00:44:25,513:INFO:differences: 1
+2022-02-02 00:44:25,513:INFO:social: 1
+2022-02-02 00:44:25,513:INFO:standing: 1
+2022-02-02 00:44:25,513:INFO:advancement: 1
+2022-02-02 00:44:25,514:INFO:public: 1
+2022-02-02 00:44:25,514:INFO:life: 2
+2022-02-02 00:44:25,514:INFO:falls: 1
+2022-02-02 00:44:25,514:INFO:reputation: 1
+2022-02-02 00:44:25,514:INFO:capacity: 1
+2022-02-02 00:44:25,514:INFO:class: 1
+2022-02-02 00:44:25,514:INFO:considerations: 1
+2022-02-02 00:44:25,515:INFO:allowed: 1
+2022-02-02 00:44:25,515:INFO:interfere: 1
+2022-02-02 00:44:25,515:INFO:merit: 1
+2022-02-02 00:44:25,515:INFO:poverty: 1
+2022-02-02 00:44:25,515:INFO:bar: 1
+2022-02-02 00:44:25,515:INFO:way: 1
+2022-02-02 00:44:25,516:INFO:man: 1
+2022-02-02 00:44:25,516:INFO:able: 1
+2022-02-02 00:44:25,516:INFO:serve: 1
+2022-02-02 00:44:25,516:INFO:state: 1
+2022-02-02 00:44:25,516:INFO:hindered: 1
+2022-02-02 00:44:25,516:INFO:obscurity: 1
+2022-02-02 00:44:25,517:INFO:condition: 1
+2022-02-02 00:44:25,517:INFO:The: 1
+2022-02-02 00:44:25,517:INFO:freedom: 1
+2022-02-02 00:44:25,517:INFO:enjoy: 1
+2022-02-02 00:44:25,517:INFO:government: 1
+2022-02-02 00:44:25,517:INFO:extends: 1
+2022-02-02 00:44:25,518:INFO:also: 1
+2022-02-02 00:44:25,518:INFO:ordinary: 1
+2022-02-02 00:44:25,518:INFO:There: 1
+2022-02-02 00:44:25,518:INFO:far: 1
+2022-02-02 00:44:25,518:INFO:exercising: 1
+2022-02-02 00:44:25,518:INFO:jealous: 1
+2022-02-02 00:44:25,518:INFO:surveillance: 1
+2022-02-02 00:44:25,519:INFO:feel: 1
+2022-02-02 00:44:25,519:INFO:upon: 1
+2022-02-02 00:44:25,519:INFO:angry: 1
+2022-02-02 00:44:25,519:INFO:neighbour: 1
+2022-02-02 00:44:25,519:INFO:likes: 1
+2022-02-02 00:44:25,519:INFO:even: 1
+2022-02-02 00:44:25,520:INFO:indulge: 1
+2022-02-02 00:44:25,520:INFO:injurious: 1
+2022-02-02 00:44:25,520:INFO:looks: 1
+2022-02-02 00:44:25,520:INFO:cannot: 2
+2022-02-02 00:44:25,520:INFO:fail: 1
+2022-02-02 00:44:25,520:INFO:offensive: 1
+2022-02-02 00:44:25,520:INFO:although: 2
+2022-02-02 00:44:25,521:INFO:inflict: 1
+2022-02-02 00:44:25,521:INFO:positive: 1
+2022-02-02 00:44:25,521:INFO:penalty: 1
+2022-02-02 00:44:25,521:INFO:But: 1
+2022-02-02 00:44:25,521:INFO:case: 1
+2022-02-02 00:44:25,521:INFO:relations: 1
+2022-02-02 00:44:25,522:INFO:make: 1
+2022-02-02 00:44:25,522:INFO:us: 2
+2022-02-02 00:44:25,522:INFO:lawless: 1
+2022-02-02 00:44:25,522:INFO:citizens: 1
+2022-02-02 00:44:25,522:INFO:Against: 1
+2022-02-02 00:44:25,522:INFO:fear: 1
+2022-02-02 00:44:25,522:INFO:chief: 1
+2022-02-02 00:44:25,523:INFO:safeguard: 1
+2022-02-02 00:44:25,523:INFO:teaching: 1
+2022-02-02 00:44:25,523:INFO:obey: 1
+2022-02-02 00:44:25,523:INFO:magistrates: 1
+2022-02-02 00:44:25,523:INFO:particularly: 1
+2022-02-02 00:44:25,523:INFO:regard: 1
+2022-02-02 00:44:25,523:INFO:protection: 1
+2022-02-02 00:44:25,524:INFO:injured: 1
+2022-02-02 00:44:25,524:INFO:whether: 1
+2022-02-02 00:44:25,524:INFO:actually: 1
+2022-02-02 00:44:25,524:INFO:statute: 1
+2022-02-02 00:44:25,524:INFO:book: 1
+2022-02-02 00:44:25,524:INFO:belong: 1
+2022-02-02 00:44:25,525:INFO:code: 1
+2022-02-02 00:44:25,525:INFO:unwritten: 1
+2022-02-02 00:44:25,525:INFO:yet: 1
+2022-02-02 00:44:25,525:INFO:broken: 1
+2022-02-02 00:44:25,525:INFO:without: 1
+2022-02-02 00:44:25,525:INFO:acknowledged: 1
+2022-02-02 00:44:25,525:INFO:disgrace: 1
+2022-02-02 00:44:49,558:INFO:Program Done.
+2022-02-02 00:48:37,661:INFO:file name received: sample
+2022-02-02 00:48:37,664:ERROR:Invalid file name: sample
+2022-02-02 00:48:55,106:INFO:file name received: sample.html
+2022-02-02 00:48:55,109:INFO:processing: sample.html, file type: html
+2022-02-02 00:48:55,132:INFO:Contents retrieved from sample.html: 
+          Our constitution does not copy the laws of neighbouring states; we are rather a pattern to others than imitators ourselves. Its administration favours the many instead of the few; this is why it is called a democracy. If we look to the laws, they afford equal justice to all in their private differences; if no social standing, advancement in public life falls to reputation for capacity, class considerations not being allowed to interfere with merit; nor again does poverty bar the way, if a man is able to serve the state, he is not hindered by the obscurity of his condition. The freedom which we enjoy in our government extends also to our ordinary life. There, far from exercising a jealous surveillance over each other, we do not feel called upon to be angry with our neighbour for doing what he likes, or even to indulge in those injurious looks which cannot fail to be offensive, although they inflict no positive penalty. But all this case in our private relations does not make us lawless as citizens. Against this fear is our chief safeguard, teaching us to obey the magistrates and the laws, particularly such as regard the protection of the injured, whether they are actually on the statute book, or belong to that code which, although unwritten, yet cannot be broken without acknowledged disgrace.
+        
+2022-02-02 00:48:55,132:INFO:Punctuation removed: 
+          Our constitution does not copy the laws of neighbouring states we are rather a pattern to others than imitators ourselves Its administration favours the many instead of the few this is why it is called a democracy If we look to the laws they afford equal justice to all in their private differences if no social standing advancement in public life falls to reputation for capacity class considerations not being allowed to interfere with merit nor again does poverty bar the way if a man is able to serve the state he is not hindered by the obscurity of his condition The freedom which we enjoy in our government extends also to our ordinary life There far from exercising a jealous surveillance over each other we do not feel called upon to be angry with our neighbour for doing what he likes or even to indulge in those injurious looks which cannot fail to be offensive although they inflict no positive penalty But all this case in our private relations does not make us lawless as citizens Against this fear is our chief safeguard teaching us to obey the magistrates and the laws particularly such as regard the protection of the injured whether they are actually on the statute book or belong to that code which although unwritten yet cannot be broken without acknowledged disgrace
+        
+2022-02-02 00:48:55,133:INFO:Split string to list of words(length=225): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'the', 'many', 'instead', 'of', 'the', 'few', 'this', 'is', 'why', 'it', 'is', 'called', 'a', 'democracy', 'If', 'we', 'look', 'to', 'the', 'laws', 'they', 'afford', 'equal', 'justice', 'to', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'in', 'public', 'life', 'falls', 'to', 'reputation', 'for', 'capacity', 'class', 'considerations', 'not', 'being', 'allowed', 'to', 'interfere', 'with', 'merit', 'nor', 'again', 'does', 'poverty', 'bar', 'the', 'way', 'if', 'a', 'man', 'is', 'able', 'to', 'serve', 'the', 'state', 'he', 'is', 'not', 'hindered', 'by', 'the', 'obscurity', 'of', 'his', 'condition', 'The', 'freedom', 'which', 'we', 'enjoy', 'in', 'our', 'government', 'extends', 'also', 'to', 'our', 'ordinary', 'life', 'There', 'far', 'from', 'exercising', 'a', 'jealous', 'surveillance', 'over', 'each', 'other', 'we', 'do', 'not', 'feel', 'called', 'upon', 'to', 'be', 'angry', 'with', 'our', 'neighbour', 'for', 'doing', 'what', 'he', 'likes', 'or', 'even', 'to', 'indulge', 'in', 'those', 'injurious', 'looks', 'which', 'cannot', 'fail', 'to', 'be', 'offensive', 'although', 'they', 'inflict', 'no', 'positive', 'penalty', 'But', 'all', 'this', 'case', 'in', 'our', 'private', 'relations', 'does', 'not', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'this', 'fear', 'is', 'our', 'chief', 'safeguard', 'teaching', 'us', 'to', 'obey', 'the', 'magistrates', 'and', 'the', 'laws', 'particularly', 'such', 'as', 'regard', 'the', 'protection', 'of', 'the', 'injured', 'whether', 'they', 'are', 'actually', 'on', 'the', 'statute', 'book', 'or', 'belong', 'to', 'that', 'code', 'which', 'although', 'unwritten', 'yet', 'cannot', 'be', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:48:55,134:INFO:Distinct words extracted(length=151): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'many', 'instead', 'few', 'this', 'is', 'why', 'it', 'called', 'democracy', 'If', 'look', 'they', 'afford', 'equal', 'justice', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'for', 'capacity', 'class', 'considerations', 'being', 'allowed', 'interfere', 'with', 'merit', 'nor', 'again', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'he', 'hindered', 'by', 'obscurity', 'his', 'condition', 'The', 'freedom', 'which', 'enjoy', 'our', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'from', 'exercising', 'jealous', 'surveillance', 'over', 'each', 'other', 'do', 'feel', 'upon', 'be', 'angry', 'neighbour', 'doing', 'what', 'likes', 'or', 'even', 'indulge', 'those', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'and', 'particularly', 'such', 'regard', 'protection', 'injured', 'whether', 'actually', 'on', 'statute', 'book', 'belong', 'that', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:48:55,135:INFO:NLTK words removed(length=105): ['Our', 'constitution', 'copy', 'laws', 'neighbouring', 'states', 'rather', 'pattern', 'others', 'imitators', 'Its', 'administration', 'favours', 'many', 'instead', 'called', 'democracy', 'If', 'look', 'afford', 'equal', 'justice', 'private', 'differences', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'capacity', 'class', 'considerations', 'allowed', 'interfere', 'merit', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'hindered', 'obscurity', 'condition', 'The', 'freedom', 'enjoy', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'exercising', 'jealous', 'surveillance', 'feel', 'upon', 'angry', 'neighbour', 'likes', 'even', 'indulge', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'particularly', 'regard', 'protection', 'injured', 'whether', 'actually', 'statute', 'book', 'belong', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:48:55,136:INFO:word frequency created(length=105): [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:48:55,136:INFO:Our: 1
+2022-02-02 00:48:55,136:INFO:constitution: 1
+2022-02-02 00:48:55,137:INFO:copy: 1
+2022-02-02 00:48:55,137:INFO:laws: 3
+2022-02-02 00:48:55,137:INFO:neighbouring: 1
+2022-02-02 00:48:55,138:INFO:states: 1
+2022-02-02 00:48:55,138:INFO:rather: 1
+2022-02-02 00:48:55,139:INFO:pattern: 1
+2022-02-02 00:48:55,139:INFO:others: 1
+2022-02-02 00:48:55,139:INFO:imitators: 1
+2022-02-02 00:48:55,140:INFO:Its: 1
+2022-02-02 00:48:55,140:INFO:administration: 1
+2022-02-02 00:48:55,140:INFO:favours: 1
+2022-02-02 00:48:55,141:INFO:many: 1
+2022-02-02 00:48:55,141:INFO:instead: 1
+2022-02-02 00:48:55,141:INFO:called: 2
+2022-02-02 00:48:55,142:INFO:democracy: 1
+2022-02-02 00:48:55,142:INFO:If: 1
+2022-02-02 00:48:55,142:INFO:look: 1
+2022-02-02 00:48:55,142:INFO:afford: 1
+2022-02-02 00:48:55,142:INFO:equal: 1
+2022-02-02 00:48:55,143:INFO:justice: 1
+2022-02-02 00:48:55,143:INFO:private: 2
+2022-02-02 00:48:55,143:INFO:differences: 1
+2022-02-02 00:48:55,144:INFO:social: 1
+2022-02-02 00:48:55,144:INFO:standing: 1
+2022-02-02 00:48:55,144:INFO:advancement: 1
+2022-02-02 00:48:55,144:INFO:public: 1
+2022-02-02 00:48:55,145:INFO:life: 2
+2022-02-02 00:48:55,145:INFO:falls: 1
+2022-02-02 00:48:55,145:INFO:reputation: 1
+2022-02-02 00:48:55,146:INFO:capacity: 1
+2022-02-02 00:48:55,146:INFO:class: 1
+2022-02-02 00:48:55,146:INFO:considerations: 1
+2022-02-02 00:48:55,146:INFO:allowed: 1
+2022-02-02 00:48:55,147:INFO:interfere: 1
+2022-02-02 00:48:55,147:INFO:merit: 1
+2022-02-02 00:48:55,147:INFO:poverty: 1
+2022-02-02 00:48:55,147:INFO:bar: 1
+2022-02-02 00:48:55,147:INFO:way: 1
+2022-02-02 00:48:55,148:INFO:man: 1
+2022-02-02 00:48:55,148:INFO:able: 1
+2022-02-02 00:48:55,148:INFO:serve: 1
+2022-02-02 00:48:55,148:INFO:state: 1
+2022-02-02 00:48:55,148:INFO:hindered: 1
+2022-02-02 00:48:55,149:INFO:obscurity: 1
+2022-02-02 00:48:55,149:INFO:condition: 1
+2022-02-02 00:48:55,149:INFO:The: 1
+2022-02-02 00:48:55,149:INFO:freedom: 1
+2022-02-02 00:48:55,149:INFO:enjoy: 1
+2022-02-02 00:48:55,149:INFO:government: 1
+2022-02-02 00:48:55,150:INFO:extends: 1
+2022-02-02 00:48:55,150:INFO:also: 1
+2022-02-02 00:48:55,150:INFO:ordinary: 1
+2022-02-02 00:48:55,150:INFO:There: 1
+2022-02-02 00:48:55,150:INFO:far: 1
+2022-02-02 00:48:55,150:INFO:exercising: 1
+2022-02-02 00:48:55,151:INFO:jealous: 1
+2022-02-02 00:48:55,151:INFO:surveillance: 1
+2022-02-02 00:48:55,151:INFO:feel: 1
+2022-02-02 00:48:55,151:INFO:upon: 1
+2022-02-02 00:48:55,151:INFO:angry: 1
+2022-02-02 00:48:55,151:INFO:neighbour: 1
+2022-02-02 00:48:55,152:INFO:likes: 1
+2022-02-02 00:48:55,152:INFO:even: 1
+2022-02-02 00:48:55,152:INFO:indulge: 1
+2022-02-02 00:48:55,152:INFO:injurious: 1
+2022-02-02 00:48:55,152:INFO:looks: 1
+2022-02-02 00:48:55,152:INFO:cannot: 2
+2022-02-02 00:48:55,153:INFO:fail: 1
+2022-02-02 00:48:55,153:INFO:offensive: 1
+2022-02-02 00:48:55,153:INFO:although: 2
+2022-02-02 00:48:55,153:INFO:inflict: 1
+2022-02-02 00:48:55,153:INFO:positive: 1
+2022-02-02 00:48:55,153:INFO:penalty: 1
+2022-02-02 00:48:55,154:INFO:But: 1
+2022-02-02 00:48:55,154:INFO:case: 1
+2022-02-02 00:48:55,154:INFO:relations: 1
+2022-02-02 00:48:55,154:INFO:make: 1
+2022-02-02 00:48:55,154:INFO:us: 2
+2022-02-02 00:48:55,154:INFO:lawless: 1
+2022-02-02 00:48:55,155:INFO:citizens: 1
+2022-02-02 00:48:55,155:INFO:Against: 1
+2022-02-02 00:48:55,155:INFO:fear: 1
+2022-02-02 00:48:55,155:INFO:chief: 1
+2022-02-02 00:48:55,155:INFO:safeguard: 1
+2022-02-02 00:48:55,155:INFO:teaching: 1
+2022-02-02 00:48:55,156:INFO:obey: 1
+2022-02-02 00:48:55,156:INFO:magistrates: 1
+2022-02-02 00:48:55,156:INFO:particularly: 1
+2022-02-02 00:48:55,156:INFO:regard: 1
+2022-02-02 00:48:55,156:INFO:protection: 1
+2022-02-02 00:48:55,157:INFO:injured: 1
+2022-02-02 00:48:55,157:INFO:whether: 1
+2022-02-02 00:48:55,157:INFO:actually: 1
+2022-02-02 00:48:55,157:INFO:statute: 1
+2022-02-02 00:48:55,157:INFO:book: 1
+2022-02-02 00:48:55,157:INFO:belong: 1
+2022-02-02 00:48:55,157:INFO:code: 1
+2022-02-02 00:48:55,158:INFO:unwritten: 1
+2022-02-02 00:48:55,158:INFO:yet: 1
+2022-02-02 00:48:55,158:INFO:broken: 1
+2022-02-02 00:48:55,158:INFO:without: 1
+2022-02-02 00:48:55,158:INFO:acknowledged: 1
+2022-02-02 00:48:55,159:INFO:disgrace: 1
+2022-02-02 00:50:39,827:INFO:file name received: sample.html
+2022-02-02 00:50:39,830:INFO:processing: sample.html, file type: html
+2022-02-02 00:50:39,847:INFO:Contents retrieved from sample.html: 
+          Our constitution does not copy the laws of neighbouring states; we are rather a pattern to others than imitators ourselves. Its administration favours the many instead of the few; this is why it is called a democracy. If we look to the laws, they afford equal justice to all in their private differences; if no social standing, advancement in public life falls to reputation for capacity, class considerations not being allowed to interfere with merit; nor again does poverty bar the way, if a man is able to serve the state, he is not hindered by the obscurity of his condition. The freedom which we enjoy in our government extends also to our ordinary life. There, far from exercising a jealous surveillance over each other, we do not feel called upon to be angry with our neighbour for doing what he likes, or even to indulge in those injurious looks which cannot fail to be offensive, although they inflict no positive penalty. But all this case in our private relations does not make us lawless as citizens. Against this fear is our chief safeguard, teaching us to obey the magistrates and the laws, particularly such as regard the protection of the injured, whether they are actually on the statute book, or belong to that code which, although unwritten, yet cannot be broken without acknowledged disgrace.
+        
+2022-02-02 00:50:39,847:INFO:Punctuation removed: 
+          Our constitution does not copy the laws of neighbouring states we are rather a pattern to others than imitators ourselves Its administration favours the many instead of the few this is why it is called a democracy If we look to the laws they afford equal justice to all in their private differences if no social standing advancement in public life falls to reputation for capacity class considerations not being allowed to interfere with merit nor again does poverty bar the way if a man is able to serve the state he is not hindered by the obscurity of his condition The freedom which we enjoy in our government extends also to our ordinary life There far from exercising a jealous surveillance over each other we do not feel called upon to be angry with our neighbour for doing what he likes or even to indulge in those injurious looks which cannot fail to be offensive although they inflict no positive penalty But all this case in our private relations does not make us lawless as citizens Against this fear is our chief safeguard teaching us to obey the magistrates and the laws particularly such as regard the protection of the injured whether they are actually on the statute book or belong to that code which although unwritten yet cannot be broken without acknowledged disgrace
+        
+2022-02-02 00:50:39,848:INFO:Split string to list of words(length=225): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'the', 'many', 'instead', 'of', 'the', 'few', 'this', 'is', 'why', 'it', 'is', 'called', 'a', 'democracy', 'If', 'we', 'look', 'to', 'the', 'laws', 'they', 'afford', 'equal', 'justice', 'to', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'in', 'public', 'life', 'falls', 'to', 'reputation', 'for', 'capacity', 'class', 'considerations', 'not', 'being', 'allowed', 'to', 'interfere', 'with', 'merit', 'nor', 'again', 'does', 'poverty', 'bar', 'the', 'way', 'if', 'a', 'man', 'is', 'able', 'to', 'serve', 'the', 'state', 'he', 'is', 'not', 'hindered', 'by', 'the', 'obscurity', 'of', 'his', 'condition', 'The', 'freedom', 'which', 'we', 'enjoy', 'in', 'our', 'government', 'extends', 'also', 'to', 'our', 'ordinary', 'life', 'There', 'far', 'from', 'exercising', 'a', 'jealous', 'surveillance', 'over', 'each', 'other', 'we', 'do', 'not', 'feel', 'called', 'upon', 'to', 'be', 'angry', 'with', 'our', 'neighbour', 'for', 'doing', 'what', 'he', 'likes', 'or', 'even', 'to', 'indulge', 'in', 'those', 'injurious', 'looks', 'which', 'cannot', 'fail', 'to', 'be', 'offensive', 'although', 'they', 'inflict', 'no', 'positive', 'penalty', 'But', 'all', 'this', 'case', 'in', 'our', 'private', 'relations', 'does', 'not', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'this', 'fear', 'is', 'our', 'chief', 'safeguard', 'teaching', 'us', 'to', 'obey', 'the', 'magistrates', 'and', 'the', 'laws', 'particularly', 'such', 'as', 'regard', 'the', 'protection', 'of', 'the', 'injured', 'whether', 'they', 'are', 'actually', 'on', 'the', 'statute', 'book', 'or', 'belong', 'to', 'that', 'code', 'which', 'although', 'unwritten', 'yet', 'cannot', 'be', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:50:39,849:INFO:Distinct words extracted(length=151): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'many', 'instead', 'few', 'this', 'is', 'why', 'it', 'called', 'democracy', 'If', 'look', 'they', 'afford', 'equal', 'justice', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'for', 'capacity', 'class', 'considerations', 'being', 'allowed', 'interfere', 'with', 'merit', 'nor', 'again', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'he', 'hindered', 'by', 'obscurity', 'his', 'condition', 'The', 'freedom', 'which', 'enjoy', 'our', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'from', 'exercising', 'jealous', 'surveillance', 'over', 'each', 'other', 'do', 'feel', 'upon', 'be', 'angry', 'neighbour', 'doing', 'what', 'likes', 'or', 'even', 'indulge', 'those', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'and', 'particularly', 'such', 'regard', 'protection', 'injured', 'whether', 'actually', 'on', 'statute', 'book', 'belong', 'that', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:50:39,850:INFO:NLTK words removed(length=105): ['Our', 'constitution', 'copy', 'laws', 'neighbouring', 'states', 'rather', 'pattern', 'others', 'imitators', 'Its', 'administration', 'favours', 'many', 'instead', 'called', 'democracy', 'If', 'look', 'afford', 'equal', 'justice', 'private', 'differences', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'capacity', 'class', 'considerations', 'allowed', 'interfere', 'merit', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'hindered', 'obscurity', 'condition', 'The', 'freedom', 'enjoy', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'exercising', 'jealous', 'surveillance', 'feel', 'upon', 'angry', 'neighbour', 'likes', 'even', 'indulge', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'particularly', 'regard', 'protection', 'injured', 'whether', 'actually', 'statute', 'book', 'belong', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:50:39,851:INFO:word frequency created(length=105): [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:50:39,851:INFO:Our: 1
+2022-02-02 00:50:39,851:INFO:constitution: 1
+2022-02-02 00:50:39,852:INFO:copy: 1
+2022-02-02 00:50:39,852:INFO:laws: 3
+2022-02-02 00:50:39,852:INFO:neighbouring: 1
+2022-02-02 00:50:39,852:INFO:states: 1
+2022-02-02 00:50:39,853:INFO:rather: 1
+2022-02-02 00:50:39,853:INFO:pattern: 1
+2022-02-02 00:50:39,853:INFO:others: 1
+2022-02-02 00:50:39,854:INFO:imitators: 1
+2022-02-02 00:50:39,854:INFO:Its: 1
+2022-02-02 00:50:39,854:INFO:administration: 1
+2022-02-02 00:50:39,854:INFO:favours: 1
+2022-02-02 00:50:39,855:INFO:many: 1
+2022-02-02 00:50:39,855:INFO:instead: 1
+2022-02-02 00:50:39,855:INFO:called: 2
+2022-02-02 00:50:39,855:INFO:democracy: 1
+2022-02-02 00:50:39,856:INFO:If: 1
+2022-02-02 00:50:39,856:INFO:look: 1
+2022-02-02 00:50:39,856:INFO:afford: 1
+2022-02-02 00:50:39,856:INFO:equal: 1
+2022-02-02 00:50:39,857:INFO:justice: 1
+2022-02-02 00:50:39,857:INFO:private: 2
+2022-02-02 00:50:39,857:INFO:differences: 1
+2022-02-02 00:50:39,857:INFO:social: 1
+2022-02-02 00:50:39,857:INFO:standing: 1
+2022-02-02 00:50:39,857:INFO:advancement: 1
+2022-02-02 00:50:39,858:INFO:public: 1
+2022-02-02 00:50:39,858:INFO:life: 2
+2022-02-02 00:50:39,858:INFO:falls: 1
+2022-02-02 00:50:39,858:INFO:reputation: 1
+2022-02-02 00:50:39,858:INFO:capacity: 1
+2022-02-02 00:50:39,858:INFO:class: 1
+2022-02-02 00:50:39,859:INFO:considerations: 1
+2022-02-02 00:50:39,859:INFO:allowed: 1
+2022-02-02 00:50:39,859:INFO:interfere: 1
+2022-02-02 00:50:39,859:INFO:merit: 1
+2022-02-02 00:50:39,859:INFO:poverty: 1
+2022-02-02 00:50:39,859:INFO:bar: 1
+2022-02-02 00:50:39,860:INFO:way: 1
+2022-02-02 00:50:39,860:INFO:man: 1
+2022-02-02 00:50:39,860:INFO:able: 1
+2022-02-02 00:50:39,860:INFO:serve: 1
+2022-02-02 00:50:39,860:INFO:state: 1
+2022-02-02 00:50:39,860:INFO:hindered: 1
+2022-02-02 00:50:39,861:INFO:obscurity: 1
+2022-02-02 00:50:39,861:INFO:condition: 1
+2022-02-02 00:50:39,861:INFO:The: 1
+2022-02-02 00:50:39,861:INFO:freedom: 1
+2022-02-02 00:50:39,861:INFO:enjoy: 1
+2022-02-02 00:50:39,861:INFO:government: 1
+2022-02-02 00:50:39,862:INFO:extends: 1
+2022-02-02 00:50:39,862:INFO:also: 1
+2022-02-02 00:50:39,862:INFO:ordinary: 1
+2022-02-02 00:50:39,862:INFO:There: 1
+2022-02-02 00:50:39,862:INFO:far: 1
+2022-02-02 00:50:39,862:INFO:exercising: 1
+2022-02-02 00:50:39,863:INFO:jealous: 1
+2022-02-02 00:50:39,864:INFO:surveillance: 1
+2022-02-02 00:50:39,864:INFO:feel: 1
+2022-02-02 00:50:39,864:INFO:upon: 1
+2022-02-02 00:50:39,864:INFO:angry: 1
+2022-02-02 00:50:39,864:INFO:neighbour: 1
+2022-02-02 00:50:39,864:INFO:likes: 1
+2022-02-02 00:50:39,865:INFO:even: 1
+2022-02-02 00:50:39,865:INFO:indulge: 1
+2022-02-02 00:50:39,865:INFO:injurious: 1
+2022-02-02 00:50:39,865:INFO:looks: 1
+2022-02-02 00:50:39,865:INFO:cannot: 2
+2022-02-02 00:50:39,865:INFO:fail: 1
+2022-02-02 00:50:39,865:INFO:offensive: 1
+2022-02-02 00:50:39,866:INFO:although: 2
+2022-02-02 00:50:39,866:INFO:inflict: 1
+2022-02-02 00:50:39,866:INFO:positive: 1
+2022-02-02 00:50:39,866:INFO:penalty: 1
+2022-02-02 00:50:39,866:INFO:But: 1
+2022-02-02 00:50:39,866:INFO:case: 1
+2022-02-02 00:50:39,866:INFO:relations: 1
+2022-02-02 00:50:39,867:INFO:make: 1
+2022-02-02 00:50:39,867:INFO:us: 2
+2022-02-02 00:50:39,867:INFO:lawless: 1
+2022-02-02 00:50:39,867:INFO:citizens: 1
+2022-02-02 00:50:39,867:INFO:Against: 1
+2022-02-02 00:50:39,867:INFO:fear: 1
+2022-02-02 00:50:39,868:INFO:chief: 1
+2022-02-02 00:50:39,868:INFO:safeguard: 1
+2022-02-02 00:50:39,868:INFO:teaching: 1
+2022-02-02 00:50:39,868:INFO:obey: 1
+2022-02-02 00:50:39,868:INFO:magistrates: 1
+2022-02-02 00:50:39,868:INFO:particularly: 1
+2022-02-02 00:50:39,869:INFO:regard: 1
+2022-02-02 00:50:39,869:INFO:protection: 1
+2022-02-02 00:50:39,869:INFO:injured: 1
+2022-02-02 00:50:39,869:INFO:whether: 1
+2022-02-02 00:50:39,869:INFO:actually: 1
+2022-02-02 00:50:39,869:INFO:statute: 1
+2022-02-02 00:50:39,869:INFO:book: 1
+2022-02-02 00:50:39,870:INFO:belong: 1
+2022-02-02 00:50:39,870:INFO:code: 1
+2022-02-02 00:50:39,870:INFO:unwritten: 1
+2022-02-02 00:50:39,870:INFO:yet: 1
+2022-02-02 00:50:39,870:INFO:broken: 1
+2022-02-02 00:50:39,870:INFO:without: 1
+2022-02-02 00:50:39,871:INFO:acknowledged: 1
+2022-02-02 00:50:39,871:INFO:disgrace: 1
+2022-02-02 00:52:28,484:INFO:file name received: sample.html
+2022-02-02 00:52:28,487:INFO:processing: sample.html, file type: html
+2022-02-02 00:52:28,501:INFO:Contents retrieved from sample.html: 
+          Our constitution does not copy the laws of neighbouring states; we are rather a pattern to others than imitators ourselves. Its administration favours the many instead of the few; this is why it is called a democracy. If we look to the laws, they afford equal justice to all in their private differences; if no social standing, advancement in public life falls to reputation for capacity, class considerations not being allowed to interfere with merit; nor again does poverty bar the way, if a man is able to serve the state, he is not hindered by the obscurity of his condition. The freedom which we enjoy in our government extends also to our ordinary life. There, far from exercising a jealous surveillance over each other, we do not feel called upon to be angry with our neighbour for doing what he likes, or even to indulge in those injurious looks which cannot fail to be offensive, although they inflict no positive penalty. But all this case in our private relations does not make us lawless as citizens. Against this fear is our chief safeguard, teaching us to obey the magistrates and the laws, particularly such as regard the protection of the injured, whether they are actually on the statute book, or belong to that code which, although unwritten, yet cannot be broken without acknowledged disgrace.
+        
+2022-02-02 00:52:28,501:INFO:Punctuation removed: 
+          Our constitution does not copy the laws of neighbouring states we are rather a pattern to others than imitators ourselves Its administration favours the many instead of the few this is why it is called a democracy If we look to the laws they afford equal justice to all in their private differences if no social standing advancement in public life falls to reputation for capacity class considerations not being allowed to interfere with merit nor again does poverty bar the way if a man is able to serve the state he is not hindered by the obscurity of his condition The freedom which we enjoy in our government extends also to our ordinary life There far from exercising a jealous surveillance over each other we do not feel called upon to be angry with our neighbour for doing what he likes or even to indulge in those injurious looks which cannot fail to be offensive although they inflict no positive penalty But all this case in our private relations does not make us lawless as citizens Against this fear is our chief safeguard teaching us to obey the magistrates and the laws particularly such as regard the protection of the injured whether they are actually on the statute book or belong to that code which although unwritten yet cannot be broken without acknowledged disgrace
+        
+2022-02-02 00:52:28,502:INFO:Split string to list of words(length=225): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'the', 'many', 'instead', 'of', 'the', 'few', 'this', 'is', 'why', 'it', 'is', 'called', 'a', 'democracy', 'If', 'we', 'look', 'to', 'the', 'laws', 'they', 'afford', 'equal', 'justice', 'to', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'in', 'public', 'life', 'falls', 'to', 'reputation', 'for', 'capacity', 'class', 'considerations', 'not', 'being', 'allowed', 'to', 'interfere', 'with', 'merit', 'nor', 'again', 'does', 'poverty', 'bar', 'the', 'way', 'if', 'a', 'man', 'is', 'able', 'to', 'serve', 'the', 'state', 'he', 'is', 'not', 'hindered', 'by', 'the', 'obscurity', 'of', 'his', 'condition', 'The', 'freedom', 'which', 'we', 'enjoy', 'in', 'our', 'government', 'extends', 'also', 'to', 'our', 'ordinary', 'life', 'There', 'far', 'from', 'exercising', 'a', 'jealous', 'surveillance', 'over', 'each', 'other', 'we', 'do', 'not', 'feel', 'called', 'upon', 'to', 'be', 'angry', 'with', 'our', 'neighbour', 'for', 'doing', 'what', 'he', 'likes', 'or', 'even', 'to', 'indulge', 'in', 'those', 'injurious', 'looks', 'which', 'cannot', 'fail', 'to', 'be', 'offensive', 'although', 'they', 'inflict', 'no', 'positive', 'penalty', 'But', 'all', 'this', 'case', 'in', 'our', 'private', 'relations', 'does', 'not', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'this', 'fear', 'is', 'our', 'chief', 'safeguard', 'teaching', 'us', 'to', 'obey', 'the', 'magistrates', 'and', 'the', 'laws', 'particularly', 'such', 'as', 'regard', 'the', 'protection', 'of', 'the', 'injured', 'whether', 'they', 'are', 'actually', 'on', 'the', 'statute', 'book', 'or', 'belong', 'to', 'that', 'code', 'which', 'although', 'unwritten', 'yet', 'cannot', 'be', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:52:28,503:INFO:Distinct words extracted(length=151): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'many', 'instead', 'few', 'this', 'is', 'why', 'it', 'called', 'democracy', 'If', 'look', 'they', 'afford', 'equal', 'justice', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'for', 'capacity', 'class', 'considerations', 'being', 'allowed', 'interfere', 'with', 'merit', 'nor', 'again', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'he', 'hindered', 'by', 'obscurity', 'his', 'condition', 'The', 'freedom', 'which', 'enjoy', 'our', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'from', 'exercising', 'jealous', 'surveillance', 'over', 'each', 'other', 'do', 'feel', 'upon', 'be', 'angry', 'neighbour', 'doing', 'what', 'likes', 'or', 'even', 'indulge', 'those', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'and', 'particularly', 'such', 'regard', 'protection', 'injured', 'whether', 'actually', 'on', 'statute', 'book', 'belong', 'that', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:52:28,504:INFO:NLTK words removed(length=105): ['Our', 'constitution', 'copy', 'laws', 'neighbouring', 'states', 'rather', 'pattern', 'others', 'imitators', 'Its', 'administration', 'favours', 'many', 'instead', 'called', 'democracy', 'If', 'look', 'afford', 'equal', 'justice', 'private', 'differences', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'capacity', 'class', 'considerations', 'allowed', 'interfere', 'merit', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'hindered', 'obscurity', 'condition', 'The', 'freedom', 'enjoy', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'exercising', 'jealous', 'surveillance', 'feel', 'upon', 'angry', 'neighbour', 'likes', 'even', 'indulge', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'particularly', 'regard', 'protection', 'injured', 'whether', 'actually', 'statute', 'book', 'belong', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:52:28,504:INFO:word frequency created(length=105): [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:52:28,505:INFO:Our: 1
+2022-02-02 00:52:28,505:INFO:constitution: 1
+2022-02-02 00:52:28,505:INFO:copy: 1
+2022-02-02 00:52:28,505:INFO:laws: 3
+2022-02-02 00:52:28,505:INFO:neighbouring: 1
+2022-02-02 00:52:28,505:INFO:states: 1
+2022-02-02 00:52:28,506:INFO:rather: 1
+2022-02-02 00:52:28,506:INFO:pattern: 1
+2022-02-02 00:52:28,506:INFO:others: 1
+2022-02-02 00:52:28,506:INFO:imitators: 1
+2022-02-02 00:52:28,506:INFO:Its: 1
+2022-02-02 00:52:28,506:INFO:administration: 1
+2022-02-02 00:52:28,506:INFO:favours: 1
+2022-02-02 00:52:28,506:INFO:many: 1
+2022-02-02 00:52:28,506:INFO:instead: 1
+2022-02-02 00:52:28,507:INFO:called: 2
+2022-02-02 00:52:28,507:INFO:democracy: 1
+2022-02-02 00:52:28,507:INFO:If: 1
+2022-02-02 00:52:28,507:INFO:look: 1
+2022-02-02 00:52:28,507:INFO:afford: 1
+2022-02-02 00:52:28,507:INFO:equal: 1
+2022-02-02 00:52:28,507:INFO:justice: 1
+2022-02-02 00:52:28,507:INFO:private: 2
+2022-02-02 00:52:28,507:INFO:differences: 1
+2022-02-02 00:52:28,508:INFO:social: 1
+2022-02-02 00:52:28,508:INFO:standing: 1
+2022-02-02 00:52:28,508:INFO:advancement: 1
+2022-02-02 00:52:28,508:INFO:public: 1
+2022-02-02 00:52:28,508:INFO:life: 2
+2022-02-02 00:52:28,508:INFO:falls: 1
+2022-02-02 00:52:28,508:INFO:reputation: 1
+2022-02-02 00:52:28,508:INFO:capacity: 1
+2022-02-02 00:52:28,508:INFO:class: 1
+2022-02-02 00:52:28,509:INFO:considerations: 1
+2022-02-02 00:52:28,509:INFO:allowed: 1
+2022-02-02 00:52:28,509:INFO:interfere: 1
+2022-02-02 00:52:28,509:INFO:merit: 1
+2022-02-02 00:52:28,509:INFO:poverty: 1
+2022-02-02 00:52:28,509:INFO:bar: 1
+2022-02-02 00:52:28,509:INFO:way: 1
+2022-02-02 00:52:28,509:INFO:man: 1
+2022-02-02 00:52:28,509:INFO:able: 1
+2022-02-02 00:52:28,510:INFO:serve: 1
+2022-02-02 00:52:28,510:INFO:state: 1
+2022-02-02 00:52:28,510:INFO:hindered: 1
+2022-02-02 00:52:28,510:INFO:obscurity: 1
+2022-02-02 00:52:28,510:INFO:condition: 1
+2022-02-02 00:52:28,510:INFO:The: 1
+2022-02-02 00:52:28,510:INFO:freedom: 1
+2022-02-02 00:52:28,510:INFO:enjoy: 1
+2022-02-02 00:52:28,510:INFO:government: 1
+2022-02-02 00:52:28,511:INFO:extends: 1
+2022-02-02 00:52:28,511:INFO:also: 1
+2022-02-02 00:52:28,511:INFO:ordinary: 1
+2022-02-02 00:52:28,511:INFO:There: 1
+2022-02-02 00:52:28,511:INFO:far: 1
+2022-02-02 00:52:28,511:INFO:exercising: 1
+2022-02-02 00:52:28,512:INFO:jealous: 1
+2022-02-02 00:52:28,512:INFO:surveillance: 1
+2022-02-02 00:52:28,512:INFO:feel: 1
+2022-02-02 00:52:28,512:INFO:upon: 1
+2022-02-02 00:52:28,512:INFO:angry: 1
+2022-02-02 00:52:28,512:INFO:neighbour: 1
+2022-02-02 00:52:28,513:INFO:likes: 1
+2022-02-02 00:52:28,513:INFO:even: 1
+2022-02-02 00:52:28,513:INFO:indulge: 1
+2022-02-02 00:52:28,513:INFO:injurious: 1
+2022-02-02 00:52:28,513:INFO:looks: 1
+2022-02-02 00:52:28,513:INFO:cannot: 2
+2022-02-02 00:52:28,513:INFO:fail: 1
+2022-02-02 00:52:28,513:INFO:offensive: 1
+2022-02-02 00:52:28,514:INFO:although: 2
+2022-02-02 00:52:28,514:INFO:inflict: 1
+2022-02-02 00:52:28,514:INFO:positive: 1
+2022-02-02 00:52:28,514:INFO:penalty: 1
+2022-02-02 00:52:28,514:INFO:But: 1
+2022-02-02 00:52:28,514:INFO:case: 1
+2022-02-02 00:52:28,514:INFO:relations: 1
+2022-02-02 00:52:28,514:INFO:make: 1
+2022-02-02 00:52:28,515:INFO:us: 2
+2022-02-02 00:52:28,515:INFO:lawless: 1
+2022-02-02 00:52:28,515:INFO:citizens: 1
+2022-02-02 00:52:28,515:INFO:Against: 1
+2022-02-02 00:52:28,515:INFO:fear: 1
+2022-02-02 00:52:28,515:INFO:chief: 1
+2022-02-02 00:52:28,515:INFO:safeguard: 1
+2022-02-02 00:52:28,516:INFO:teaching: 1
+2022-02-02 00:52:28,516:INFO:obey: 1
+2022-02-02 00:52:28,516:INFO:magistrates: 1
+2022-02-02 00:52:28,516:INFO:particularly: 1
+2022-02-02 00:52:28,516:INFO:regard: 1
+2022-02-02 00:52:28,516:INFO:protection: 1
+2022-02-02 00:52:28,516:INFO:injured: 1
+2022-02-02 00:52:28,517:INFO:whether: 1
+2022-02-02 00:52:28,517:INFO:actually: 1
+2022-02-02 00:52:28,517:INFO:statute: 1
+2022-02-02 00:52:28,517:INFO:book: 1
+2022-02-02 00:52:28,517:INFO:belong: 1
+2022-02-02 00:52:28,517:INFO:code: 1
+2022-02-02 00:52:28,518:INFO:unwritten: 1
+2022-02-02 00:52:28,518:INFO:yet: 1
+2022-02-02 00:52:28,518:INFO:broken: 1
+2022-02-02 00:52:28,518:INFO:without: 1
+2022-02-02 00:52:28,518:INFO:acknowledged: 1
+2022-02-02 00:52:28,518:INFO:disgrace: 1
+2022-02-02 00:53:07,964:INFO:Program Done.
+2022-02-02 00:53:32,067:INFO:file name received: sample.html
+2022-02-02 00:53:32,068:INFO:processing: sample.html, file type: html
+2022-02-02 00:53:32,073:INFO:Contents retrieved from sample.html: 
+          Our constitution does not copy the laws of neighbouring states; we are rather a pattern to others than imitators ourselves. Its administration favours the many instead of the few; this is why it is called a democracy. If we look to the laws, they afford equal justice to all in their private differences; if no social standing, advancement in public life falls to reputation for capacity, class considerations not being allowed to interfere with merit; nor again does poverty bar the way, if a man is able to serve the state, he is not hindered by the obscurity of his condition. The freedom which we enjoy in our government extends also to our ordinary life. There, far from exercising a jealous surveillance over each other, we do not feel called upon to be angry with our neighbour for doing what he likes, or even to indulge in those injurious looks which cannot fail to be offensive, although they inflict no positive penalty. But all this case in our private relations does not make us lawless as citizens. Against this fear is our chief safeguard, teaching us to obey the magistrates and the laws, particularly such as regard the protection of the injured, whether they are actually on the statute book, or belong to that code which, although unwritten, yet cannot be broken without acknowledged disgrace.
+        
+2022-02-02 00:53:32,074:INFO:Punctuation removed: 
+          Our constitution does not copy the laws of neighbouring states we are rather a pattern to others than imitators ourselves Its administration favours the many instead of the few this is why it is called a democracy If we look to the laws they afford equal justice to all in their private differences if no social standing advancement in public life falls to reputation for capacity class considerations not being allowed to interfere with merit nor again does poverty bar the way if a man is able to serve the state he is not hindered by the obscurity of his condition The freedom which we enjoy in our government extends also to our ordinary life There far from exercising a jealous surveillance over each other we do not feel called upon to be angry with our neighbour for doing what he likes or even to indulge in those injurious looks which cannot fail to be offensive although they inflict no positive penalty But all this case in our private relations does not make us lawless as citizens Against this fear is our chief safeguard teaching us to obey the magistrates and the laws particularly such as regard the protection of the injured whether they are actually on the statute book or belong to that code which although unwritten yet cannot be broken without acknowledged disgrace
+        
+2022-02-02 00:53:32,075:INFO:Split string to list of words(length=225): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'the', 'many', 'instead', 'of', 'the', 'few', 'this', 'is', 'why', 'it', 'is', 'called', 'a', 'democracy', 'If', 'we', 'look', 'to', 'the', 'laws', 'they', 'afford', 'equal', 'justice', 'to', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'in', 'public', 'life', 'falls', 'to', 'reputation', 'for', 'capacity', 'class', 'considerations', 'not', 'being', 'allowed', 'to', 'interfere', 'with', 'merit', 'nor', 'again', 'does', 'poverty', 'bar', 'the', 'way', 'if', 'a', 'man', 'is', 'able', 'to', 'serve', 'the', 'state', 'he', 'is', 'not', 'hindered', 'by', 'the', 'obscurity', 'of', 'his', 'condition', 'The', 'freedom', 'which', 'we', 'enjoy', 'in', 'our', 'government', 'extends', 'also', 'to', 'our', 'ordinary', 'life', 'There', 'far', 'from', 'exercising', 'a', 'jealous', 'surveillance', 'over', 'each', 'other', 'we', 'do', 'not', 'feel', 'called', 'upon', 'to', 'be', 'angry', 'with', 'our', 'neighbour', 'for', 'doing', 'what', 'he', 'likes', 'or', 'even', 'to', 'indulge', 'in', 'those', 'injurious', 'looks', 'which', 'cannot', 'fail', 'to', 'be', 'offensive', 'although', 'they', 'inflict', 'no', 'positive', 'penalty', 'But', 'all', 'this', 'case', 'in', 'our', 'private', 'relations', 'does', 'not', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'this', 'fear', 'is', 'our', 'chief', 'safeguard', 'teaching', 'us', 'to', 'obey', 'the', 'magistrates', 'and', 'the', 'laws', 'particularly', 'such', 'as', 'regard', 'the', 'protection', 'of', 'the', 'injured', 'whether', 'they', 'are', 'actually', 'on', 'the', 'statute', 'book', 'or', 'belong', 'to', 'that', 'code', 'which', 'although', 'unwritten', 'yet', 'cannot', 'be', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:53:32,076:INFO:Distinct words extracted(length=151): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'many', 'instead', 'few', 'this', 'is', 'why', 'it', 'called', 'democracy', 'If', 'look', 'they', 'afford', 'equal', 'justice', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'for', 'capacity', 'class', 'considerations', 'being', 'allowed', 'interfere', 'with', 'merit', 'nor', 'again', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'he', 'hindered', 'by', 'obscurity', 'his', 'condition', 'The', 'freedom', 'which', 'enjoy', 'our', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'from', 'exercising', 'jealous', 'surveillance', 'over', 'each', 'other', 'do', 'feel', 'upon', 'be', 'angry', 'neighbour', 'doing', 'what', 'likes', 'or', 'even', 'indulge', 'those', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'and', 'particularly', 'such', 'regard', 'protection', 'injured', 'whether', 'actually', 'on', 'statute', 'book', 'belong', 'that', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:53:32,077:INFO:NLTK words removed(length=105): ['Our', 'constitution', 'copy', 'laws', 'neighbouring', 'states', 'rather', 'pattern', 'others', 'imitators', 'Its', 'administration', 'favours', 'many', 'instead', 'called', 'democracy', 'If', 'look', 'afford', 'equal', 'justice', 'private', 'differences', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'capacity', 'class', 'considerations', 'allowed', 'interfere', 'merit', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'hindered', 'obscurity', 'condition', 'The', 'freedom', 'enjoy', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'exercising', 'jealous', 'surveillance', 'feel', 'upon', 'angry', 'neighbour', 'likes', 'even', 'indulge', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'particularly', 'regard', 'protection', 'injured', 'whether', 'actually', 'statute', 'book', 'belong', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:53:32,078:INFO:word frequency created(length=105): [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:53:32,078:INFO:Our: 1
+2022-02-02 00:53:32,078:INFO:constitution: 1
+2022-02-02 00:53:32,078:INFO:copy: 1
+2022-02-02 00:53:32,079:INFO:laws: 3
+2022-02-02 00:53:32,079:INFO:neighbouring: 1
+2022-02-02 00:53:32,079:INFO:states: 1
+2022-02-02 00:53:32,079:INFO:rather: 1
+2022-02-02 00:53:32,080:INFO:pattern: 1
+2022-02-02 00:53:32,080:INFO:others: 1
+2022-02-02 00:53:32,080:INFO:imitators: 1
+2022-02-02 00:53:32,080:INFO:Its: 1
+2022-02-02 00:53:32,081:INFO:administration: 1
+2022-02-02 00:53:32,081:INFO:favours: 1
+2022-02-02 00:53:32,081:INFO:many: 1
+2022-02-02 00:53:32,081:INFO:instead: 1
+2022-02-02 00:53:32,082:INFO:called: 2
+2022-02-02 00:53:32,082:INFO:democracy: 1
+2022-02-02 00:53:32,082:INFO:If: 1
+2022-02-02 00:53:32,082:INFO:look: 1
+2022-02-02 00:53:32,082:INFO:afford: 1
+2022-02-02 00:53:32,082:INFO:equal: 1
+2022-02-02 00:53:32,083:INFO:justice: 1
+2022-02-02 00:53:32,083:INFO:private: 2
+2022-02-02 00:53:32,083:INFO:differences: 1
+2022-02-02 00:53:32,083:INFO:social: 1
+2022-02-02 00:53:32,083:INFO:standing: 1
+2022-02-02 00:53:32,083:INFO:advancement: 1
+2022-02-02 00:53:32,084:INFO:public: 1
+2022-02-02 00:53:32,084:INFO:life: 2
+2022-02-02 00:53:32,084:INFO:falls: 1
+2022-02-02 00:53:32,084:INFO:reputation: 1
+2022-02-02 00:53:32,084:INFO:capacity: 1
+2022-02-02 00:53:32,085:INFO:class: 1
+2022-02-02 00:53:32,085:INFO:considerations: 1
+2022-02-02 00:53:32,085:INFO:allowed: 1
+2022-02-02 00:53:32,085:INFO:interfere: 1
+2022-02-02 00:53:32,085:INFO:merit: 1
+2022-02-02 00:53:32,085:INFO:poverty: 1
+2022-02-02 00:53:32,086:INFO:bar: 1
+2022-02-02 00:53:32,086:INFO:way: 1
+2022-02-02 00:53:32,086:INFO:man: 1
+2022-02-02 00:53:32,086:INFO:able: 1
+2022-02-02 00:53:32,086:INFO:serve: 1
+2022-02-02 00:53:32,086:INFO:state: 1
+2022-02-02 00:53:32,087:INFO:hindered: 1
+2022-02-02 00:53:32,087:INFO:obscurity: 1
+2022-02-02 00:53:32,087:INFO:condition: 1
+2022-02-02 00:53:32,087:INFO:The: 1
+2022-02-02 00:53:32,087:INFO:freedom: 1
+2022-02-02 00:53:32,087:INFO:enjoy: 1
+2022-02-02 00:53:32,088:INFO:government: 1
+2022-02-02 00:53:32,088:INFO:extends: 1
+2022-02-02 00:53:32,088:INFO:also: 1
+2022-02-02 00:53:32,088:INFO:ordinary: 1
+2022-02-02 00:53:32,088:INFO:There: 1
+2022-02-02 00:53:32,088:INFO:far: 1
+2022-02-02 00:53:32,089:INFO:exercising: 1
+2022-02-02 00:53:32,089:INFO:jealous: 1
+2022-02-02 00:53:32,089:INFO:surveillance: 1
+2022-02-02 00:53:32,089:INFO:feel: 1
+2022-02-02 00:53:32,089:INFO:upon: 1
+2022-02-02 00:53:32,089:INFO:angry: 1
+2022-02-02 00:53:32,090:INFO:neighbour: 1
+2022-02-02 00:53:32,090:INFO:likes: 1
+2022-02-02 00:53:32,090:INFO:even: 1
+2022-02-02 00:53:32,090:INFO:indulge: 1
+2022-02-02 00:53:32,090:INFO:injurious: 1
+2022-02-02 00:53:32,090:INFO:looks: 1
+2022-02-02 00:53:32,091:INFO:cannot: 2
+2022-02-02 00:53:32,091:INFO:fail: 1
+2022-02-02 00:53:32,091:INFO:offensive: 1
+2022-02-02 00:53:32,092:INFO:although: 2
+2022-02-02 00:53:32,092:INFO:inflict: 1
+2022-02-02 00:53:32,092:INFO:positive: 1
+2022-02-02 00:53:32,093:INFO:penalty: 1
+2022-02-02 00:53:32,093:INFO:But: 1
+2022-02-02 00:53:32,093:INFO:case: 1
+2022-02-02 00:53:32,093:INFO:relations: 1
+2022-02-02 00:53:32,093:INFO:make: 1
+2022-02-02 00:53:32,093:INFO:us: 2
+2022-02-02 00:53:32,094:INFO:lawless: 1
+2022-02-02 00:53:32,094:INFO:citizens: 1
+2022-02-02 00:53:32,094:INFO:Against: 1
+2022-02-02 00:53:32,094:INFO:fear: 1
+2022-02-02 00:53:32,094:INFO:chief: 1
+2022-02-02 00:53:32,094:INFO:safeguard: 1
+2022-02-02 00:53:32,095:INFO:teaching: 1
+2022-02-02 00:53:32,095:INFO:obey: 1
+2022-02-02 00:53:32,095:INFO:magistrates: 1
+2022-02-02 00:53:32,095:INFO:particularly: 1
+2022-02-02 00:53:32,095:INFO:regard: 1
+2022-02-02 00:53:32,095:INFO:protection: 1
+2022-02-02 00:53:32,096:INFO:injured: 1
+2022-02-02 00:53:32,096:INFO:whether: 1
+2022-02-02 00:53:32,096:INFO:actually: 1
+2022-02-02 00:53:32,096:INFO:statute: 1
+2022-02-02 00:53:32,096:INFO:book: 1
+2022-02-02 00:53:32,097:INFO:belong: 1
+2022-02-02 00:53:32,097:INFO:code: 1
+2022-02-02 00:53:32,097:INFO:unwritten: 1
+2022-02-02 00:53:32,097:INFO:yet: 1
+2022-02-02 00:53:32,097:INFO:broken: 1
+2022-02-02 00:53:32,097:INFO:without: 1
+2022-02-02 00:53:32,098:INFO:acknowledged: 1
+2022-02-02 00:53:32,098:INFO:disgrace: 1
+2022-02-02 00:53:44,603:INFO:Program Done.
+2022-02-02 00:56:05,939:INFO:file name received: example.txt
+2022-02-02 00:56:05,942:INFO:processing: example.txt, file type: txt
+2022-02-02 00:56:05,943:INFO:Contents retrieved from example.txt: hello, this is an example txt file to read
+I wandered lonely as a cloud
+That floats on high over vales and hills
+When all at once I saw a crowd
+A host of golden worker ants.
+
+2022-02-02 00:56:05,943:INFO:Punctuation removed: hello this is an example txt file to read
+I wandered lonely as a cloud
+That floats on high over vales and hills
+When all at once I saw a crowd
+A host of golden worker ants
+
+2022-02-02 00:56:05,943:INFO:Split string to list of words(length=37): ['hello', 'this', 'is', 'an', 'example', 'txt', 'file', 'to', 'read', 'I', 'wandered', 'lonely', 'as', 'a', 'cloud', 'That', 'floats', 'on', 'high', 'over', 'vales', 'and', 'hills', 'When', 'all', 'at', 'once', 'I', 'saw', 'a', 'crowd', 'A', 'host', 'of', 'golden', 'worker', 'ants']
+2022-02-02 00:56:05,944:INFO:Distinct words extracted(length=35): ['hello', 'this', 'is', 'an', 'example', 'txt', 'file', 'to', 'read', 'I', 'wandered', 'lonely', 'as', 'a', 'cloud', 'That', 'floats', 'on', 'high', 'over', 'vales', 'and', 'hills', 'When', 'all', 'at', 'once', 'saw', 'crowd', 'A', 'host', 'of', 'golden', 'worker', 'ants']
+2022-02-02 00:56:05,944:INFO:NLTK words removed(length=22): ['hello', 'example', 'txt', 'file', 'read', 'I', 'wandered', 'lonely', 'cloud', 'That', 'floats', 'high', 'vales', 'hills', 'When', 'saw', 'crowd', 'A', 'host', 'golden', 'worker', 'ants']
+2022-02-02 00:56:05,944:INFO:word frequency created(length=22): [1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:56:05,945:INFO:hello: 1
+2022-02-02 00:56:05,945:INFO:example: 1
+2022-02-02 00:56:05,945:INFO:txt: 1
+2022-02-02 00:56:05,946:INFO:file: 1
+2022-02-02 00:56:05,946:INFO:read: 1
+2022-02-02 00:56:05,946:INFO:I: 2
+2022-02-02 00:56:05,946:INFO:wandered: 1
+2022-02-02 00:56:05,947:INFO:lonely: 1
+2022-02-02 00:56:05,947:INFO:cloud: 1
+2022-02-02 00:56:05,948:INFO:That: 1
+2022-02-02 00:56:05,948:INFO:floats: 1
+2022-02-02 00:56:05,948:INFO:high: 1
+2022-02-02 00:56:05,948:INFO:vales: 1
+2022-02-02 00:56:05,949:INFO:hills: 1
+2022-02-02 00:56:05,949:INFO:When: 1
+2022-02-02 00:56:05,949:INFO:saw: 1
+2022-02-02 00:56:05,950:INFO:crowd: 1
+2022-02-02 00:56:05,950:INFO:A: 1
+2022-02-02 00:56:05,950:INFO:host: 1
+2022-02-02 00:56:05,950:INFO:golden: 1
+2022-02-02 00:56:05,951:INFO:worker: 1
+2022-02-02 00:56:05,951:INFO:ants: 1
+2022-02-02 00:56:09,361:INFO:Program Done.
+2022-02-02 00:56:16,266:INFO:file name received: sample.html
+2022-02-02 00:56:16,267:INFO:processing: sample.html, file type: html
+2022-02-02 00:56:16,281:INFO:Contents retrieved from sample.html: 
+          Our constitution does not copy the laws of neighbouring states; we are rather a pattern to others than imitators ourselves. Its administration favours the many instead of the few; this is why it is called a democracy. If we look to the laws, they afford equal justice to all in their private differences; if no social standing, advancement in public life falls to reputation for capacity, class considerations not being allowed to interfere with merit; nor again does poverty bar the way, if a man is able to serve the state, he is not hindered by the obscurity of his condition. The freedom which we enjoy in our government extends also to our ordinary life. There, far from exercising a jealous surveillance over each other, we do not feel called upon to be angry with our neighbour for doing what he likes, or even to indulge in those injurious looks which cannot fail to be offensive, although they inflict no positive penalty. But all this case in our private relations does not make us lawless as citizens. Against this fear is our chief safeguard, teaching us to obey the magistrates and the laws, particularly such as regard the protection of the injured, whether they are actually on the statute book, or belong to that code which, although unwritten, yet cannot be broken without acknowledged disgrace.
+        
+2022-02-02 00:56:16,282:INFO:Punctuation removed: 
+          Our constitution does not copy the laws of neighbouring states we are rather a pattern to others than imitators ourselves Its administration favours the many instead of the few this is why it is called a democracy If we look to the laws they afford equal justice to all in their private differences if no social standing advancement in public life falls to reputation for capacity class considerations not being allowed to interfere with merit nor again does poverty bar the way if a man is able to serve the state he is not hindered by the obscurity of his condition The freedom which we enjoy in our government extends also to our ordinary life There far from exercising a jealous surveillance over each other we do not feel called upon to be angry with our neighbour for doing what he likes or even to indulge in those injurious looks which cannot fail to be offensive although they inflict no positive penalty But all this case in our private relations does not make us lawless as citizens Against this fear is our chief safeguard teaching us to obey the magistrates and the laws particularly such as regard the protection of the injured whether they are actually on the statute book or belong to that code which although unwritten yet cannot be broken without acknowledged disgrace
+        
+2022-02-02 00:56:16,283:INFO:Split string to list of words(length=225): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'the', 'many', 'instead', 'of', 'the', 'few', 'this', 'is', 'why', 'it', 'is', 'called', 'a', 'democracy', 'If', 'we', 'look', 'to', 'the', 'laws', 'they', 'afford', 'equal', 'justice', 'to', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'in', 'public', 'life', 'falls', 'to', 'reputation', 'for', 'capacity', 'class', 'considerations', 'not', 'being', 'allowed', 'to', 'interfere', 'with', 'merit', 'nor', 'again', 'does', 'poverty', 'bar', 'the', 'way', 'if', 'a', 'man', 'is', 'able', 'to', 'serve', 'the', 'state', 'he', 'is', 'not', 'hindered', 'by', 'the', 'obscurity', 'of', 'his', 'condition', 'The', 'freedom', 'which', 'we', 'enjoy', 'in', 'our', 'government', 'extends', 'also', 'to', 'our', 'ordinary', 'life', 'There', 'far', 'from', 'exercising', 'a', 'jealous', 'surveillance', 'over', 'each', 'other', 'we', 'do', 'not', 'feel', 'called', 'upon', 'to', 'be', 'angry', 'with', 'our', 'neighbour', 'for', 'doing', 'what', 'he', 'likes', 'or', 'even', 'to', 'indulge', 'in', 'those', 'injurious', 'looks', 'which', 'cannot', 'fail', 'to', 'be', 'offensive', 'although', 'they', 'inflict', 'no', 'positive', 'penalty', 'But', 'all', 'this', 'case', 'in', 'our', 'private', 'relations', 'does', 'not', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'this', 'fear', 'is', 'our', 'chief', 'safeguard', 'teaching', 'us', 'to', 'obey', 'the', 'magistrates', 'and', 'the', 'laws', 'particularly', 'such', 'as', 'regard', 'the', 'protection', 'of', 'the', 'injured', 'whether', 'they', 'are', 'actually', 'on', 'the', 'statute', 'book', 'or', 'belong', 'to', 'that', 'code', 'which', 'although', 'unwritten', 'yet', 'cannot', 'be', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:56:16,283:INFO:Distinct words extracted(length=151): ['Our', 'constitution', 'does', 'not', 'copy', 'the', 'laws', 'of', 'neighbouring', 'states', 'we', 'are', 'rather', 'a', 'pattern', 'to', 'others', 'than', 'imitators', 'ourselves', 'Its', 'administration', 'favours', 'many', 'instead', 'few', 'this', 'is', 'why', 'it', 'called', 'democracy', 'If', 'look', 'they', 'afford', 'equal', 'justice', 'all', 'in', 'their', 'private', 'differences', 'if', 'no', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'for', 'capacity', 'class', 'considerations', 'being', 'allowed', 'interfere', 'with', 'merit', 'nor', 'again', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'he', 'hindered', 'by', 'obscurity', 'his', 'condition', 'The', 'freedom', 'which', 'enjoy', 'our', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'from', 'exercising', 'jealous', 'surveillance', 'over', 'each', 'other', 'do', 'feel', 'upon', 'be', 'angry', 'neighbour', 'doing', 'what', 'likes', 'or', 'even', 'indulge', 'those', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'as', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'and', 'particularly', 'such', 'regard', 'protection', 'injured', 'whether', 'actually', 'on', 'statute', 'book', 'belong', 'that', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:56:16,284:INFO:NLTK words removed(length=105): ['Our', 'constitution', 'copy', 'laws', 'neighbouring', 'states', 'rather', 'pattern', 'others', 'imitators', 'Its', 'administration', 'favours', 'many', 'instead', 'called', 'democracy', 'If', 'look', 'afford', 'equal', 'justice', 'private', 'differences', 'social', 'standing', 'advancement', 'public', 'life', 'falls', 'reputation', 'capacity', 'class', 'considerations', 'allowed', 'interfere', 'merit', 'poverty', 'bar', 'way', 'man', 'able', 'serve', 'state', 'hindered', 'obscurity', 'condition', 'The', 'freedom', 'enjoy', 'government', 'extends', 'also', 'ordinary', 'There', 'far', 'exercising', 'jealous', 'surveillance', 'feel', 'upon', 'angry', 'neighbour', 'likes', 'even', 'indulge', 'injurious', 'looks', 'cannot', 'fail', 'offensive', 'although', 'inflict', 'positive', 'penalty', 'But', 'case', 'relations', 'make', 'us', 'lawless', 'citizens', 'Against', 'fear', 'chief', 'safeguard', 'teaching', 'obey', 'magistrates', 'particularly', 'regard', 'protection', 'injured', 'whether', 'actually', 'statute', 'book', 'belong', 'code', 'unwritten', 'yet', 'broken', 'without', 'acknowledged', 'disgrace']
+2022-02-02 00:56:16,286:INFO:word frequency created(length=105): [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2022-02-02 00:56:16,286:INFO:Our: 1
+2022-02-02 00:56:16,286:INFO:constitution: 1
+2022-02-02 00:56:16,287:INFO:copy: 1
+2022-02-02 00:56:16,288:INFO:laws: 3
+2022-02-02 00:56:16,289:INFO:neighbouring: 1
+2022-02-02 00:56:16,289:INFO:states: 1
+2022-02-02 00:56:16,289:INFO:rather: 1
+2022-02-02 00:56:16,290:INFO:pattern: 1
+2022-02-02 00:56:16,290:INFO:others: 1
+2022-02-02 00:56:16,290:INFO:imitators: 1
+2022-02-02 00:56:16,290:INFO:Its: 1
+2022-02-02 00:56:16,291:INFO:administration: 1
+2022-02-02 00:56:16,291:INFO:favours: 1
+2022-02-02 00:56:16,291:INFO:many: 1
+2022-02-02 00:56:16,291:INFO:instead: 1
+2022-02-02 00:56:16,292:INFO:called: 2
+2022-02-02 00:56:16,292:INFO:democracy: 1
+2022-02-02 00:56:16,292:INFO:If: 1
+2022-02-02 00:56:16,293:INFO:look: 1
+2022-02-02 00:56:16,293:INFO:afford: 1
+2022-02-02 00:56:16,293:INFO:equal: 1
+2022-02-02 00:56:16,293:INFO:justice: 1
+2022-02-02 00:56:16,293:INFO:private: 2
+2022-02-02 00:56:16,294:INFO:differences: 1
+2022-02-02 00:56:16,294:INFO:social: 1
+2022-02-02 00:56:16,294:INFO:standing: 1
+2022-02-02 00:56:16,294:INFO:advancement: 1
+2022-02-02 00:56:16,295:INFO:public: 1
+2022-02-02 00:56:16,295:INFO:life: 2
+2022-02-02 00:56:16,295:INFO:falls: 1
+2022-02-02 00:56:16,295:INFO:reputation: 1
+2022-02-02 00:56:16,295:INFO:capacity: 1
+2022-02-02 00:56:16,296:INFO:class: 1
+2022-02-02 00:56:16,296:INFO:considerations: 1
+2022-02-02 00:56:16,296:INFO:allowed: 1
+2022-02-02 00:56:16,296:INFO:interfere: 1
+2022-02-02 00:56:16,296:INFO:merit: 1
+2022-02-02 00:56:16,296:INFO:poverty: 1
+2022-02-02 00:56:16,297:INFO:bar: 1
+2022-02-02 00:56:16,297:INFO:way: 1
+2022-02-02 00:56:16,297:INFO:man: 1
+2022-02-02 00:56:16,297:INFO:able: 1
+2022-02-02 00:56:16,297:INFO:serve: 1
+2022-02-02 00:56:16,297:INFO:state: 1
+2022-02-02 00:56:16,298:INFO:hindered: 1
+2022-02-02 00:56:16,298:INFO:obscurity: 1
+2022-02-02 00:56:16,298:INFO:condition: 1
+2022-02-02 00:56:16,298:INFO:The: 1
+2022-02-02 00:56:16,298:INFO:freedom: 1
+2022-02-02 00:56:16,299:INFO:enjoy: 1
+2022-02-02 00:56:16,299:INFO:government: 1
+2022-02-02 00:56:16,299:INFO:extends: 1
+2022-02-02 00:56:16,299:INFO:also: 1
+2022-02-02 00:56:16,299:INFO:ordinary: 1
+2022-02-02 00:56:16,299:INFO:There: 1
+2022-02-02 00:56:16,300:INFO:far: 1
+2022-02-02 00:56:16,300:INFO:exercising: 1
+2022-02-02 00:56:16,300:INFO:jealous: 1
+2022-02-02 00:56:16,300:INFO:surveillance: 1
+2022-02-02 00:56:16,300:INFO:feel: 1
+2022-02-02 00:56:16,300:INFO:upon: 1
+2022-02-02 00:56:16,300:INFO:angry: 1
+2022-02-02 00:56:16,300:INFO:neighbour: 1
+2022-02-02 00:56:16,301:INFO:likes: 1
+2022-02-02 00:56:16,301:INFO:even: 1
+2022-02-02 00:56:16,301:INFO:indulge: 1
+2022-02-02 00:56:16,301:INFO:injurious: 1
+2022-02-02 00:56:16,301:INFO:looks: 1
+2022-02-02 00:56:16,301:INFO:cannot: 2
+2022-02-02 00:56:16,301:INFO:fail: 1
+2022-02-02 00:56:16,302:INFO:offensive: 1
+2022-02-02 00:56:16,302:INFO:although: 2
+2022-02-02 00:56:16,302:INFO:inflict: 1
+2022-02-02 00:56:16,302:INFO:positive: 1
+2022-02-02 00:56:16,302:INFO:penalty: 1
+2022-02-02 00:56:16,302:INFO:But: 1
+2022-02-02 00:56:16,303:INFO:case: 1
+2022-02-02 00:56:16,303:INFO:relations: 1
+2022-02-02 00:56:16,303:INFO:make: 1
+2022-02-02 00:56:16,303:INFO:us: 2
+2022-02-02 00:56:16,303:INFO:lawless: 1
+2022-02-02 00:56:16,303:INFO:citizens: 1
+2022-02-02 00:56:16,304:INFO:Against: 1
+2022-02-02 00:56:16,304:INFO:fear: 1
+2022-02-02 00:56:16,304:INFO:chief: 1
+2022-02-02 00:56:16,304:INFO:safeguard: 1
+2022-02-02 00:56:16,304:INFO:teaching: 1
+2022-02-02 00:56:16,304:INFO:obey: 1
+2022-02-02 00:56:16,305:INFO:magistrates: 1
+2022-02-02 00:56:16,305:INFO:particularly: 1
+2022-02-02 00:56:16,305:INFO:regard: 1
+2022-02-02 00:56:16,305:INFO:protection: 1
+2022-02-02 00:56:16,305:INFO:injured: 1
+2022-02-02 00:56:16,305:INFO:whether: 1
+2022-02-02 00:56:16,306:INFO:actually: 1
+2022-02-02 00:56:16,306:INFO:statute: 1
+2022-02-02 00:56:16,306:INFO:book: 1
+2022-02-02 00:56:16,306:INFO:belong: 1
+2022-02-02 00:56:16,306:INFO:code: 1
+2022-02-02 00:56:16,307:INFO:unwritten: 1
+2022-02-02 00:56:16,307:INFO:yet: 1
+2022-02-02 00:56:16,307:INFO:broken: 1
+2022-02-02 00:56:16,307:INFO:without: 1
+2022-02-02 00:56:16,307:INFO:acknowledged: 1
+2022-02-02 00:56:16,307:INFO:disgrace: 1
+2022-02-02 00:56:23,253:INFO:Program Done.
