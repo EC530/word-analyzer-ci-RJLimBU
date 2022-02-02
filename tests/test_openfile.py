@@ -16,3 +16,7 @@ def test_openexample2():
 def test_openpdf():
 	name = wordfreq.openfile("sample.pdf")
 	assert "A Simple PDF File" in name
+
+def test_openhtml():
+	name = wordfreq.openfile("sample.html")
+	assert "yet cannot be broken without acknowledged disgrace" in name

@@ -5,6 +5,7 @@ import PyPDF2
 import tracemalloc
 import cProfile
 #import re
+from bs4 import BeautifulSoup
 
 #cProfile.run('re.compile("foo|bar")', 'cProfileStat')
 
@@ -53,14 +54,25 @@ class wordfreq:
 			pgobj = pdfreader.getPage(0)
 			txt = pgobj.extractText()
 			pdfobj.close()
+		elif suf == "html":
+			try:
+				f = open(fp, 'r')
+			except:
+				logging.error('unable to open file: {}'.format(fp))
+				print("Fail to open file!!!")
+				exit()
+			contents = f.read()
+			temp = BeautifulSoup(contents, 'lxml')
+			txt = temp.p.text
+			f.close()
 		else:
-			logging.error('File {}: Format is not txt or pdf.'.format(fp))
+			logging.error('File {}: Format is not txt/pdf/html.'.format(fp))
 			print('Program terminated due to invalid file format.')
 			exit()
 		return txt
 
 	def rmvpunc(txt):
-		punc = '''!()-[]{};:'",<>./?@#$%^&*_~'''
+		punc = '''!()-[]{};:'"“”,<>./?@#$%^&*_~'''
 		out = txt
 		for i in out:
 			if i in punc:

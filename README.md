@@ -1,13 +1,12 @@
 # word-analyzer-ci-RJLimBU
 ## word-analyzer-ci-RJLimBU created by GitHub Classroom <br />
 ### Description <br />
-this project reads contents in a txt and PDF file, counts the word frequency <br />
+this project reads contents in a txt, PDF and html file, counts the word frequency <br />
 and display the histogram. NLTK stop words are removed from the count. <br />
-html format reading is still developing due to dependency issue. <br />
 logging and profiling is added to the program. <br />
 ### How to Use <br />
 -run the 'mainloop.py' file <br />
--enter the filename with .txt or .pdf suffix in the same directory <br />
+-enter the filename with .txt, .pdf or .html suffix in the same directory <br />
 <br />
 once user input the filename, the program will show word frequency <br />
 and display a histogram. It will remove NLTK stop words from the count. <br />
@@ -17,7 +16,7 @@ see "requirement.txt" <br />
 System: latest version of Ubuntu <br />
 Python version: 3.8, 3.9, 3.10 <br />
 ### Unit tests
--test the open file function and check if it correctly read words from the txt/pdf file <br />
+-test the open file function and check if it correctly read words from the txt/pdf/html file <br />
 -check if correctly remove punctuation <br />
 -correctly split strings into list of words <br /> 
 -extract distinct words from the string <br />
@@ -32,7 +31,7 @@ in the text, the y-axis shows the frequency of each word <br />
 <br />
 ![histogramResult](/images/sample_output.png)
 <br />
-This histogram displays the output from "sample.pdf" <br />
+This histogram displays the output from another sample <br />
 <br />
 ![histogramResultPDF](/images/sample_outputpdf.png)
 <br />
